@@ -1,0 +1,208 @@
+html,
+body {
+    margin: 0px 0px !important;
+    padding: 0px 0px !important;
+    box-sizing: border-box;
+    max-height: 100vh !important;
+    overflow-y: hidden;
+    max-width: 100vw; 
+    overflow-x: hidden;
+}
+
+.App {
+    background: url('./assets/background/background2.jpeg') no-repeat center/cover ;
+    background-size: 100% 100% ;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-y: scroll;
+}
+
+.dtmBorder {
+    border: 1px solid black;
+}
+
+/* breakPoints */
+@media (max-width: 1161px) {
+    .BodyHeader {
+        padding: 40px 55px;
+    }
+
+    .MenuItem {
+        padding: 15px 10px;
+    }
+
+    .Body .BodyMenu {
+        padding: 0px 55px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .News .ctEvent{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        padding: 50px 55px;
+    }
+
+}
+
+@media (max-width: 1019px) {
+    .Steak {
+        display: none;
+    }
+}
+
+@media (max-width: 971px) {
+    .Brand {
+        display: none !important;
+    }
+
+    .Body .BodyMenu {
+        padding: 0px 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .News .ctEvent{
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 50px 10px;
+    }
+
+    .News .ctMeet{
+        padding: 50px 10px;
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(1 , 1fr);
+        justify-items: center;
+    
+    }
+
+    .CtRecervar{
+        padding-right: 10px;
+    }
+
+}
+
+
+@media (max-width: 770px) {
+    .ftColumn{
+        flex-direction: column;
+    }
+
+    .ftColumn > div:nth-child(2){
+        border-left: 0px dashed rgb(47, 45, 45);
+        border-right: 0px dashed rgb(47, 45, 45);
+        border-bottom: 2px dashed rgb(47, 45, 45);
+        border-top: 2px dashed rgb(47, 45, 45);
+    }
+}
+
+@media (max-width: 681px) {
+    .Menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        margin: 0px 0px;
+        height: 100vh;
+        width: 80% !important;
+        background-color: rgb(255, 255, 255);
+        z-index: 180;
+        justify-content: flex-start;
+        box-shadow: black 1px 1px 15px;
+    }
+
+
+    .Menu>.MenuItem {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.201);
+        /* width: 80%;         */
+    }
+
+    .Menu>.MenuItem:active {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.201);
+        background-color: rgba(119, 111, 111, 0.562);
+    }
+
+    .Menu .TitleYClose {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.201);
+        font-size: 20px;
+        padding: 15px 0px;
+        justify-content: space-between;
+    }
+
+    .Menu .TitleYClose .Title {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .Menu .TitleYClose .Close {
+        margin-right: 10px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .trs300left {
+        left: -600px !important;
+    }
+
+
+    .TriggerMenu {
+        display: flex;
+    }
+
+
+    .Body .BodyMenu {
+        padding: 0px 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+
+@media (max-width: 502px) {
+    .BodyHeader {
+        padding: 20px 25px;
+        height: auto;
+    }
+
+    .Header {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 445px) {
+    .CarouselType1 .CyStar .Cy {
+        display: none;
+    }
+
+    .CarouselType1 .NameYPrice .Price {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    .ItemMenuBody .Name {
+        font-size: 25px;
+    }
+    
+    .ItemMenuBody .Price {
+        font-size: 15px;
+    }    
+}
+
+
+
+@media (max-width: 354px){
+    .reviews{
+        display: none ;
+    }
+    .CarouselType1 .detailSplide{
+        bottom: 20px;
+        margin: 5px;        
+    }
+}

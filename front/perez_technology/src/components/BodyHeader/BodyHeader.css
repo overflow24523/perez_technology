@@ -1,0 +1,6 @@
+.BodyHeader{
+    background: url('../../assets/2023-03-18 18 23 41.png') no-repeat center/cover; 
+    height: 100%;
+    display: flex;
+    padding: 80px 110px;
+}
