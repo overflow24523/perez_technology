@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Morning Fresh",
+        "hora": "Breakfast",
+        "photo": "./src/assets/images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg",
+        "price": 12.50,
+        "reviews": 102,
+        "ratio": "4.3/5",
+        "stars": [
+            2,
+            2,
+            2,
+            2,
+            0
+        ]
+    }
+    , 
+    {
+        "name": "Tooplate Soup",
+        "hora": "Launch",
+        "photo": "./src/assets/images/lunch/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg",
+        "price": 24.50,
+        "reviews": 50 ,
+        "ratio": "3/5",
+        "stars": [
+            2,2,2,0,0
+        ]
+    },
+    {
+        "name": "Premium Steak",
+        "hora": "Dinner",
+        "photo": "./src/assets/images/dinner/keriliwi-c3mFafsFz2w-unsplash.jpg",
+        "price": 45,
+        "reviews": 86 ,
+        "ratio": "3/5",
+        "stars": [
+            2,2,2,0,0
+        ]
+    },
+    {
+        "name": "Seafood Set",
+        "hora": "Dinner",
+        "photo": "./src/assets/images/dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg",
+        "price": 86,
+        "reviews": 44 ,
+        "ratio": "3/5",
+        "stars": [
+            2,2,2,0,0
+        ]
+    }
+    , 
+    {
+        "name": "Burger Set",
+        "hora": "Breakfast",
+        "photo": "./src/assets/images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg",
+        "price": 20.50,
+        "reviews": 105 ,
+        "ratio": "4.3/5",
+        "stars": [
+            2,2,2,1,0
+        ]
+    },
+    {
+        "name": "Healthy Soup",
+        "hora": "Launch",
+        "photo": "./src/assets/images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg",
+        "price": 34.20,
+        "reviews": 64 ,
+        "ratio": "2.5/5",
+        "stars": [
+            2,2,1,0 ,0
+        ]
+    }
+
+]
