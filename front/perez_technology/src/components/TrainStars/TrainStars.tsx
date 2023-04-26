@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { FC } from 'react'
 import { StarsTrain } from '../../Types/types';
 import './TrainStars.css'

@@ -1,5 +1,5 @@
 import './Steak.css'
-import TrainStars from '../TrainStars/TrainStars';
+
 
 const Steak = () => {
     return (
