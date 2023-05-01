@@ -8,10 +8,9 @@ const App = ()=>{
  return <Router>
     <div className="App"  >
       <Routes>
-        <Route  index element ={ <Index_Page />} />
         <Route  path='/login' element ={ <Login_Page />} />
-        <Route  path='/register' element ={ <Login_Page />} />
-        <Route  path='/recover' element ={ <Login_Page />} />
+        <Route  path='/' element ={ <Index_Page />} />
+        <Route  path='*' element ={ <Index_Page />} />
       </Routes>
     </div>
   </Router>

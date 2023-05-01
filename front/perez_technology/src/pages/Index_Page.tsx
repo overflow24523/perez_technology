@@ -1,6 +1,7 @@
+import Index from "../components/Index/Index"
+
+
 const Index_Page = () =>{
-    return <h1>
-        Este es el index
-    </h1>
+    return <Index/>
 }
 export default Index_Page

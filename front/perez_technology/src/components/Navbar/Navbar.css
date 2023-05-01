@@ -1,0 +1,27 @@
+.Nabvar{
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* border-bottom: 1px solid #01c4fa; */
+    box-shadow: #01c4fa 0px 1px 5px ;
+}
+
+.CtRecervar{
+    
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 102px;
+}
+
+
+
+
+.TriggerMenu{
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+

@@ -1,0 +1,8 @@
+.btnRecervar{
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
