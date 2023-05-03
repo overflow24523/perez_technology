@@ -1,0 +1,8 @@
+.ContactPhone{
+    /* border: 1px solid black; */
+    margin-top: 60px;
+    width: 350px;
+    height: 600px;
+    background: url('./src/assets/icons/phone.png') no-repeat center/cover;
+    background-size: 100% 100% ;
+}

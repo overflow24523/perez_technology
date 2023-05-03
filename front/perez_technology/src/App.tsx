@@ -5,7 +5,7 @@ import Login_Page from './pages/Login_Page';
 
 const App = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [upOrDown , setUpOrDown] = useState(true)
+  const [upOrDown , setUpOrDown] = useState(false)
 
   const handleScroll = (event: any) => {
 
