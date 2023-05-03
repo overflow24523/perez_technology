@@ -1,11 +1,13 @@
 import Navbar from "../Navbar/Navbar"
-const Index = () => {
+import {FC} from 'react'
+import Footer from "../Footer/Footer"
+
+const Index: FC<{upOrDown: boolean}> = ({upOrDown}) => {
     return (
         <>
-            <Navbar />
-            <div style={{height: "9000px"}}>
-
-            </div>
+            <Navbar upOrDown = {upOrDown} />
+            <div style={{height: "2000px"}}></div>
+            <Footer/>
         </>
     )
 }

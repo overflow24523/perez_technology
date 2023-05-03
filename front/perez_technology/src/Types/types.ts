@@ -1,5 +1,19 @@
 type actionable = {
-    action: (arg: string) => void ;  
+    action: (arg: string) => void;
 }
 
-export type {actionable}
+type MenuElement = {
+    texto: string,
+    accion: (arg: number) => void,
+    clase: string,
+    target: string,
+    pointer: number
+}
+
+
+type Botton = {
+    texto: string,
+    clase: string
+}
+
+export type { actionable, MenuElement, Botton }

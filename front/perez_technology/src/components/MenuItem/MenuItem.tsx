@@ -2,11 +2,11 @@ import * as React from 'react';
 import {MenuElement} from '../../Types/types';
 import './MenuItem.css'
 
-const MenuItem: React.FC<MenuElement>  = ({texto , accion , clase = "" , target=""})=>{
+const MenuItem: React.FC<MenuElement>  = ({texto , accion , clase = "" , target="", pointer})=>{
     return (
-        <div className={`MenuItem ${clase}`}  onClick={()=>{ accion(texto) }}>
-            <a href={`${target?target:""}`}>{texto}</a>
-        </div>
+        <a className={`MenuItem ${clase}`}  href={`${target?target:""}`} onClick={()=>{ accion(pointer) }}>
+            {texto}
+        </a>
     )
 }
 

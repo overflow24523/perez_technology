@@ -1,10 +1,18 @@
 .Nabvar{
+    width: 100%;
+    position: fixed;
     padding: 14px;
     display: flex;
     justify-content: space-between;
     background-color: white;
     /* border-bottom: 1px solid #01c4fa; */
     box-shadow: #01c4fa 0px 1px 5px ;
+    transform: translateY(-150px);
+    transition: all 0.5s;
+}
+
+.Nabvar.active{
+    transform: translateY(0px);
 }
 
 .CtRecervar{
