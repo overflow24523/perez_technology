@@ -46,7 +46,6 @@
     margin-top: 5px;
     position: absolute;
     left: 0;
-    transform: translateY(-43px);
     margin-left: 10px;
     padding: 10px;
     pointer-events: none;
@@ -56,22 +55,31 @@
     transition: 0.5s;
     letter-spacing: 3px;
     border-radius: 8px;
+
+    transform: translateY(-43px);
+    -webkit-transform: translateY(-43px);
+    -moz-transform: translateY(0px);
 }
 
 .ContactForm .inputBox input:valid~span,
 .ContactForm .inputBox input:focus~span{
-    transform: translateX(113px) translateY(-58px);
     font-size: 0.8em;
     padding: 5px 10px;
     background: #1259c4;
     letter-spacing: 0.2em;
     color: #fff;
     border: 2px;
+
+    transform: translateX(113px) translateY(-58px);
+    -webkit-transform: translateX(113px) translateY(-58px);
+    -moz-transform: translateX(130px) translateY(-17px);
 }
 
 .ContactForm textarea{
     resize: none !important;
 }
+
+
 
 .ContactForm .inputBox textarea:valid~span,
 .ContactForm .inputBox textarea:focus~span {
@@ -82,6 +90,10 @@
     letter-spacing: 0.2em;
     color: #fff;
     border: 2px;
+
+    transform: translateX(113px) translateY(-120px);
+    -webkit-transform: translateX(113px) translateY(-120px);
+    -moz-transform: translateX(140px) translateY(-15px);
 }
 
 
@@ -92,4 +104,11 @@
 .ContactForm .inputBox textarea:valid {
     border: 2px solid #6b79f8;
     border-radius: 8px;
+}
+
+
+.ContactForm .inputBox.textarea span {
+    transform: translateY(-43px);
+    -webkit-transform: translateY(-43px);
+    -moz-transform: translateY(52px);
 }

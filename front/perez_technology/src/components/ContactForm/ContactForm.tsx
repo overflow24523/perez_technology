@@ -16,7 +16,7 @@ const ContactForm = () => {
                     <span>Teléfono</span>
                 </div>
 
-                <div className="inputBox">
+                <div className="inputBox textarea">
                     <textarea rows={5}  required={true}></textarea>
                     <span>Mensaje</span>
                 </div>
