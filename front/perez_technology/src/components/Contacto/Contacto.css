@@ -1,8 +1,10 @@
 .Contacto{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url("./src/assets/background/backgroundContact.svg");
+    background: url("./src/assets/background/backgroundContact.svg") no-repeat center/cover ; 
+    background-size: 100% 100%;
+    
 }

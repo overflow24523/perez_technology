@@ -16,4 +16,11 @@ type Botton = {
     clase: string
 }
 
-export type { actionable, MenuElement, Botton }
+type tIconoDescriptivo = {
+    src: string, 
+    title   :string,
+    descripcion: string
+}
+
+
+export type { actionable, MenuElement, Botton , tIconoDescriptivo}
