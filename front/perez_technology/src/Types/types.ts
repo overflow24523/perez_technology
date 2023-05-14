@@ -23,4 +23,12 @@ type tIconoDescriptivo = {
 }
 
 
-export type { actionable, MenuElement, Botton , tIconoDescriptivo}
+type tIconDescriptionTitle = {
+    title: string , 
+    description:string,
+    src: string,
+    type: string
+}
+
+
+export type { actionable, MenuElement, Botton , tIconoDescriptivo, tIconDescriptionTitle}

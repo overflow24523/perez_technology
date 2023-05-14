@@ -1,0 +1,55 @@
+.IconDescriptionTitle{
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+.IconDescriptionTitle .ctTexts{
+    padding: 0px 15px;
+}
+
+.IconDescriptionTitle .ctTexts .title{
+    font-size: 20;
+    font-weight: 800;
+    color: rgb(71, 70, 70);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    /* border: 1px solid black; */
+}
+
+.IconDescriptionTitle .ctTexts .description{
+    font-size: 18;
+    font-weight: 300;
+    color: rgb(71, 70, 70);
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 1px solid black; */
+}
+
+.IconDescriptionTitle.t1{
+    flex-direction: row;
+}
+
+.IconDescriptionTitle.t2{
+    flex-direction: row-reverse;
+}
+
+.IconDescriptionTitle.t1 .ctTexts .title{
+    text-align: right;
+}
+
+.IconDescriptionTitle.t1 .ctTexts .description{
+    text-align: right;
+}
+
+
+
+.IconDescriptionTitle .ctImg img{ 
+    width: 105px;
+    height: 92px;
+}
+
