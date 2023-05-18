@@ -8,7 +8,7 @@ type MenuElement = {
     clase: string,
     target: string,
     pointer: number
-}
+} & Partial<{dtmAnimationType:string}>
 
 
 type Botton = {

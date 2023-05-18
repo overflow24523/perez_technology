@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    min-height: 100vh;
 }
 
 .Inicio .ct1{
@@ -13,6 +14,7 @@
     height: calc(80vh - 50px);
     background: url('./src/assets/background/background4.jpg') no-repeat center/cover;
     background-size: 100% 100%;
+    z-index: 1;
 }
 
 
@@ -25,4 +27,5 @@
     background: white;
     box-shadow: 3px 3px 10px gray;
     border-radius: 5px ;
+    z-index: 2;
 }

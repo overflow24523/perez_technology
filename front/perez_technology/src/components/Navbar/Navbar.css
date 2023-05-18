@@ -9,6 +9,8 @@
     box-shadow: #01c4fa 0px 1px 5px ;
     transform: translateY(-150px);
     transition: all 0.5s;
+    min-height: 72px;
+    z-index: 50;
 }
 
 .Nabvar.active{

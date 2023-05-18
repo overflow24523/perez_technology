@@ -1,0 +1,157 @@
+:root{
+    --timing-curve: cubic-bezier(0.2, -0.55, 0.265, 1.55);
+}
+
+
+.Nabvar{
+    --menuItemMoveDelay: 0.9s; 
+    --brandMoveDelay:    0.9s; 
+}
+
+.Inicio{
+    --InicioItemsDelay: 0.9s; 
+}
+
+.Nosotros{
+    --NosotrosItemDelay: 1.5s; 
+}
+
+.Contacto{
+    --ContactoItemDelay: 5.5s ; 
+}
+
+
+.Nabvar.visible .MenuItem.T1{
+    animation: moveT1 var(--menuItemMoveDelay) var(--timing-curve) forwards;
+}
+
+.Nabvar.visible .MenuItem.T2{
+    animation: moveT2 var(--menuItemMoveDelay) var(--timing-curve) forwards;
+}
+
+
+.Nabvar.visible .MenuItem.T3{
+    animation: moveT3 var(--menuItemMoveDelay) var(--timing-curve) forwards;
+}
+
+
+.Nabvar.visible .Brand{
+    animation: moveT4 var(--brandMoveDelay)    var(--timing-curve) forwards;
+}
+
+.Nabvar.visible .CtRecervar{
+    animation: moveT5 var(--brandMoveDelay)    var(--timing-curve) forwards;
+} 
+
+.Inicio.visible .ct1{
+    animation: moveT6 var(--InicioItemsDelay)    var(--timing-curve) forwards;
+}
+
+
+.Inicio.visible .ct2{
+    animation: moveT7 var(--InicioItemsDelay)    var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .ctImg{
+    animation: moveT8 var(--NosotrosItemDelay)    var(--timing-curve) forwards;
+}
+
+
+
+.Beneficios.visible  .title1{
+    animation: moveT9 var(--NosotrosItemDelay)    var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .title{
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.2s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .divider{
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.3s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .descripcion{
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.4s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .ctList li:nth-child(1){
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.5s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .ctList li:nth-child(2){
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.6s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .ctList li:nth-child(3){
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.7s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .ctList li:nth-child(4){
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.8s )   var(--timing-curve) forwards;
+}
+
+.Beneficios.visible  .ctList li:nth-child(5){
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 0.9s )   var(--timing-curve) forwards;
+}
+
+
+.Beneficios.visible  .ButtonContactar{
+    animation: moveT9 calc(var(--NosotrosItemDelay) + 1s )   var(--timing-curve) forwards;
+}
+
+
+.Proceso.visible  .col1 .title{
+    animation: moveT10 var(--NosotrosItemDelay)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible  .col1 .title2{
+    animation: moveT8 var(--NosotrosItemDelay)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible  .col1 .divider{
+    animation: moveT10 var(--NosotrosItemDelay)    var(--timing-curve) forwards;
+}
+
+
+.Proceso.visible  .col1 .description{
+    animation: moveT8 var(--NosotrosItemDelay)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible .col2  .ct1 .IconDescriptionTitle.t1:nth-child(1){
+    animation: moveT8 calc(var(--NosotrosItemDelay) + 0.5s)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible .col2  .ct1 .IconDescriptionTitle.t1:nth-child(2){
+    animation: moveT8 calc(var(--NosotrosItemDelay) + 0.7s)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible .col2  .ct1 .IconDescriptionTitle.t1:nth-child(3){
+    animation: moveT8 calc(var(--NosotrosItemDelay) + 0.9s)    var(--timing-curve) forwards;
+}
+
+
+.Proceso.visible .col2  .ct3 .IconDescriptionTitle.t2:nth-child(1){
+    animation: moveT10 calc(var(--NosotrosItemDelay) + 0.5s)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible .col2  .ct3 .IconDescriptionTitle.t2:nth-child(2){
+    animation: moveT10 calc(var(--NosotrosItemDelay) + 0.7s)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible .col2  .ct3 .IconDescriptionTitle.t2:nth-child(3){
+    animation: moveT10 calc(var(--NosotrosItemDelay) + 0.9s)    var(--timing-curve) forwards;
+}
+
+.Proceso.visible .col2 .ct2 img{
+    animation: resize1 calc(var(--NosotrosItemDelay) )    forwards;
+}
+
+
+.Contacto.visible .ContactPhone{
+    animation: moveT11 var(--ContactoItemDelay) var(--timing-curve) forwards;
+}
+
+
+.Contacto.visible .ContactForm{
+    animation: moveT12 var(--ContactoItemDelay) var(--timing-curve) forwards;
+}

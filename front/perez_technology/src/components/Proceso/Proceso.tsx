@@ -1,7 +1,32 @@
+import { useState ,useEffect, useRef} from 'react'
 import './Proceso.css'
 import IconDescriptionTitle from '../IconDescriptionTitle/IconDescriptionTitle';
+
 const Proceso = ()=>{
-    return <div className="Proceso">
+
+    const [isVisible, setVisible] = useState(false)
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(item => {
+                if (item.isIntersecting) {
+                    setVisible(true)
+                } else {
+                    setVisible(false)
+                }
+            })
+        })
+
+        if (ref.current) {
+            observer.observe(ref.current)
+        }
+
+        return () => observer.disconnect()
+
+    }, [])
+
+    return <div className={`Proceso ${isVisible?'visible':''}`}  ref={ref}>
         <div className='col1'>
             <div className='title'>
                 Proceso

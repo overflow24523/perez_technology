@@ -1,0 +1,198 @@
+/* Animations of Navbar */
+
+@keyframes moveT1 {
+    from {
+        position: relative;
+        left: -100px;
+        top: -100px;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes moveT2 {
+    from {
+        position: relative;
+        left: 100px;
+        top: -100px;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+@keyframes moveT3 {
+    from {
+        position: relative;
+        left: 0px;
+        top: -100px;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* Animations of brand */
+
+@keyframes moveT4 {
+    from {
+        position: relative;
+        left: -300px;
+        top: 0px;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* Animations of  btEntrar*/
+@keyframes moveT5 {
+    from {
+        position: relative;
+        right: -300px;
+        top: 0px;
+    }
+
+    to {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+}
+
+/* Animatinos of inicio */
+
+@keyframes moveT6 {
+    from {
+        position: relative;
+        left: 0%;
+        top: -250px;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+}
+
+
+@keyframes moveT7 {
+    from {
+        position: relative;
+        left: 0%;
+        top: 250px;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+}
+
+/* Animations of nosotros */
+
+@keyframes moveT8 {
+    from {
+        position: relative;
+        left: -1000px;
+        top: 0px;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+}
+
+@keyframes moveT9 {
+    0% {
+        position: relative;
+        left: 1000px;
+        top: 0px;
+    }
+
+    50% {
+        position: relative;
+        left: 1000px;
+        top: 0px;
+    }
+
+    100% {
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+}
+
+@keyframes moveT10 {
+    0% {
+        position: relative;
+        left: 1000px;
+        top: 0px;
+    }
+
+    100% {
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+}
+
+@keyframes resize1{
+    from{
+        width: 0%;
+        height: 0%;
+    }   
+    to{
+        width: 100%;
+        height: 100%;
+    } 
+}
+
+/* animations of contacto */
+
+@keyframes moveT11 {
+    0% {
+        position: relative;
+        right: -1500px;
+        top: 0px;
+    }
+
+    100% {
+        position: relative;
+        right: 0%;
+        top: 0px;
+    }
+}
+
+
+@keyframes moveT12 {
+    0% {
+        position: relative;
+        right: 1500px;
+        top: 0px;
+    }
+
+    100% {
+        position: relative;
+        right: 0%;
+        top: 0px;
+    }
+}

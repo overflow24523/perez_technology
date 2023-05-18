@@ -1,9 +1,10 @@
-import { FC } from 'react'
+import {FC} from 'react'
 import './IconDescriptionTitle.css'
 import { tIconDescriptionTitle } from '../../Types/types'
 
 const IconDescriptionTitle: FC<tIconDescriptionTitle> = ({title , src , description, type})=>{
-    return <div className={`IconDescriptionTitle ${type}`} >
+
+    return <div className={`IconDescriptionTitle ${type} `} >
         
         <div className='ctTexts'>   
             <div className='title'>

@@ -29,14 +29,13 @@ const Menu: React.FC<{open: boolean , closeHandler:  (arg: boolean) => void}> = 
                     X
                 </div>
             </div>
-            <MenuItem texto = {"Inicio"} target="#inicio"   accion={action}   pointer={0}  clase={`${itemActive[0]?'active':''}`}/>
-            <MenuItem texto = {"Nosotros"} target="#nosotros"   accion={action}   pointer={1}  clase={`${itemActive[1]?'active':''}`} />
-            <MenuItem texto = {"Talleres"} target="#talleres" accion={action} pointer={2}  clase={`${itemActive[2]?'active':''}`} />
-            <MenuItem texto = {"Promociones"} target="#promociones"   accion={action}   pointer={3}  clase={`${itemActive[3]?'active':''}`} />
-            <MenuItem texto = {"Contacto"} target="#contacto"    accion={action}    pointer={4}  clase={`${itemActive[4]?'active':''}`}/>
-        </div>
-        
-    )
+            <MenuItem texto = {"Inicio"}      target="#inicio"       accion={action}    pointer={0}  clase={`${itemActive[0]?'active':''} ` } dtmAnimationType='T1'/>
+            <MenuItem texto = {"Nosotros"}    target="#nosotros"     accion={action}    pointer={1}  clase={`${itemActive[1]?'active':''} ` } dtmAnimationType='T2'/>
+            <MenuItem texto = {"Talleres"}    target="#talleres"     accion={action}    pointer={2}  clase={`${itemActive[2]?'active':''} ` } dtmAnimationType='T3'/>
+            <MenuItem texto = {"Promociones"} target="#promociones"  accion={action}    pointer={3}  clase={`${itemActive[3]?'active':''} ` } dtmAnimationType='T1'/>
+            <MenuItem texto = {"Contacto"}    target="#contacto"     accion={action}    pointer={4}  clase={`${itemActive[4]?'active':''} ` } dtmAnimationType='T2'/>
+    </div>)
+    
 }
 
 export default Menu

@@ -1,11 +1,16 @@
-import { useState } from 'react';
+import { useState} from 'react';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Index_Page from './pages/Index_Page';
 import Login_Page from './pages/Login_Page';
 
+import './dtmAnimations.css'
+import './dtmMotion.css'
+
+
 const App = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [upOrDown , setUpOrDown] = useState(false)
+  const [upOrDown , setUpOrDown] = useState(true)
 
   const handleScroll = (event: any) => {
 
