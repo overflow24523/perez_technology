@@ -135,3 +135,15 @@ body .footer .content>div .image {
         bottom: var(--distance, 10rem);
     }
 }   
+
+.ctFooter{
+    z-index: 1500;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.ctFooter > div{
+    border: 1px solid black;
+    flex: 1;
+}

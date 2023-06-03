@@ -131,7 +131,17 @@ const Footer = () => {
                 <div className="bubble" style={{"--size":" 3.334641524496214rem","--distance":" 8.071014814228349rem","--position":" 69.32429954428984%","--time":" 3.639084333317536s","--delay":" -3.5070285180805008s"}}></div>
                 <div className="bubble" style={{"--size":" 3.7491996266846517rem","--distance":" 7.999856861143533rem","--position":" 90.41901440178962%","--time":" 3.6508045949827475s","--delay":" -3.7401940688768196s"}}></div>
                 <div className="bubble" style={{"--size":" 4.1828653929345165rem","--distance":" 8.940938430276322rem","--position":" 52.19911536337786%","--time":" 2.8653357847548855s","--delay":" -2.6593771707914375s"}}></div>
-
+            </div>
+            <div className='ctFooter'>
+                <div className='st1'>
+                    
+                </div>
+                <div className='st2'>
+                    
+                </div>
+                <div className='st3'>
+                    
+                </div>
             </div>
         </div>
 
