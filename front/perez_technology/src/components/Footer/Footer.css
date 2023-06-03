@@ -138,12 +138,120 @@ body .footer .content>div .image {
 
 .ctFooter{
     z-index: 1500;
-    border: 1px solid black;
+    border-top: 1px solid rgb(11, 80, 94);
     display: flex;
     flex-direction: row;
+    font-size: 30px;
+    color: rgb(11, 80, 94);
 }
 
 .ctFooter > div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    flex: 1;
+    padding: 15px;
+}
+
+
+.ctFooter > div:nth-child(2){
+    border-left:  1px solid rgb(11, 80, 94);
+    border-right: 1px solid rgb(11, 80, 94);
+}
+
+
+.ctFooter .st1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ctFooter .st1 .ctTitle{
+    border-bottom: 1px solid rgb(11, 80, 94);    
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.ctFooter .st1 .ctLocalization{
+    font-size: 20px;
+} 
+
+.ctFooter .st2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ctFooter .st2 .ctTitle{
+    border-bottom: 1px solid rgb(11, 80, 94);    
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.ctFooter .st2 .ctForm{
+    padding-top: 15px;
+    display: flex;        
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+.ctFooter .st2 .ctForm input {
+    border-radius: 15px;
+    width: 70%;
+    border: none;
+    font-size: 25px;
+    padding: 2px;
+    padding-left: 5px;
+    color: rgb(11, 80, 94);
+    background-color: rgb(205, 197, 197);
+}
+
+.ctFooter .st3{
+    display: flex;
+    flex-direction: column;
+}
+
+.ctFooter .st3 .ctTitle{
+    border-bottom: 1px solid rgb(11, 80, 94);    
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.ctFooter .st3 .ctIcons{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black ; */
+}
+
+
+.ctFooter .st3 .ctIcons .ctGmail { 
+    border-bottom: 1px solid rgb(11, 80, 94);;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.ctFooter .st3 .ctIcons a{
+    text-decoration: none;
+    color: rgb(11, 80, 94);;
+}
+
+.ctFooter .st3 .ctIcons .ctGmail > *{
     flex: 1;
 }
+
+
+.ctFooter .st3 .ctIcons .ctFbInst { 
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+.ctFooter .st3 .ctIcons .ctFbInst> *{
+    flex: 1;
+}
+
+
+
