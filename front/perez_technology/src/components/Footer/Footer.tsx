@@ -1,6 +1,7 @@
 import { RiFacebookBoxFill, RiInstagramFill, RiMailSendFill } from 'react-icons/ri'
 import './Footer.css'
 import BtEnviar from '../BtEnviar/BtEnviar';
+import FooterImportado from '../FooterImportado/FooterImportado';
 const Footer = () => {
     return <div className='Footer'>
         <div id="footer" className="footer">
@@ -134,53 +135,7 @@ const Footer = () => {
                 <div className="bubble" style={{"--size":" 3.7491996266846517rem","--distance":" 7.999856861143533rem","--position":" 90.41901440178962%","--time":" 3.6508045949827475s","--delay":" -3.7401940688768196s"}}></div>
                 <div className="bubble" style={{"--size":" 4.1828653929345165rem","--distance":" 8.940938430276322rem","--position":" 52.19911536337786%","--time":" 2.8653357847548855s","--delay":" -2.6593771707914375s"}}></div>
             </div>
-            <div className='ctFooter'>
-                <div className='st1'>
-                    <div className='ctTitle'>
-                         ¿ Dónde encontrarnos ?     
-                    </div>
-                    <div className='ctLocalization'>
-                        Estamos en La habana, municipio Vedado, en 15 Entr 2 y 4. 
-                        A la orden de lunes a viernes. 
-                    </div>
-                </div>
-                <div className='st2'>
-                    <div className='ctTitle'>
-                         Subscríbete
-                    </div>
-                    <div className='ctForm'>
-                        <input type="email" placeholder='micorreo@gmail.com' />
-                        <BtEnviar text='Enviar' />
-                    </div>
-                </div>
-                <div className='st3'>
-                    <div className='ctTitle'>
-                        Síguenos en 
-                    </div>          
-                    <div className='ctIcons'>
-                        <div className='ctGmail'>
-                            <div>
-                                <a href="mailto:pereztechnology01@gmail.com"><RiMailSendFill /></a>
-                            </div>
-                            <div>
-                                <a href="mailto:pereztechnology01@gmail.com">Correo electrónico</a>
-                            </div>
-                        </div>
-                        <div className='ctFbInst'>
-                            <div>
-                                <a href="https://www.facebook.com/profile.php?id=100091656409799&mibextid=ZbWKwL">
-                                    <RiFacebookBoxFill />
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://instagram.com/technologyperez?igshid=ZGUzMzM3NWJiOQ==">
-                                    <RiInstagramFill />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <FooterImportado />
         </div>
 
         <svg style={{ "position": "fixed", "top": "100vh" }}>
@@ -194,6 +149,7 @@ const Footer = () => {
             </defs>
         </svg>
     </div>
+    
 }
 
 
