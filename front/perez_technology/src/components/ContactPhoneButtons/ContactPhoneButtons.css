@@ -1,0 +1,47 @@
+.ContactPhoneButtons{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 15% 15%  7%  ;
+    grid-template-columns: 1fr;
+}
+
+
+.ContactPhoneButtons .ctButtons{
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: 1fr;
+    padding: 5px;
+}
+
+
+.ContactPhoneButtons .ctButtons:nth-child(1){
+    grid-row: 2/3;
+}
+
+.ContactPhoneButtons .ctButtons:nth-child(2){
+    /* background-color: rgba(255, 255, 255, 0.636); */
+    border-radius: 15px;
+    grid-row: 3/3;
+}
+
+.ContactPhoneButtons .ctButtons:nth-child(3){
+    grid-template-columns: repeat(3 , 1fr);    
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border-top: 1px solid rgb(238, 234, 234); */
+    margin-top: 5px;
+    padding: 0px 20px;
+} 
+
+.ContactPhoneButtons .ctButtons:nth-child(3) .BtnSphone {
+    width:  32px !important;
+    height: 32px !important;
+}
+
+
+

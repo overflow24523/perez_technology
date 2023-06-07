@@ -30,5 +30,10 @@ type tIconDescriptionTitle = {
     type: string
 }
 
+type tBtnSphone = {
+    src: string , 
+    handler: ()=>void
+}
 
-export type { actionable, MenuElement, Botton , tIconoDescriptivo, tIconDescriptionTitle}
+
+export type { actionable, MenuElement, Botton , tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone}
