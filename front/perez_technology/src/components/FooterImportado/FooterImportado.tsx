@@ -18,7 +18,7 @@ const FooterImportado = () => {
             </h2>
             <p>
               Perez Technology es una empresa dedicada a la reparación  de dispositivos electrónicos.
-              Nuestro lema: "Todo tiene solución". Reparamos en tiempo record 
+              Nuestro lema: "Podemos arreglarlo". Reparamos en tiempo record 
               teléfonos, tablet, aipads, portatiles, ordenadores de escritorio y relojes inteligentes.
             </p>
             <p>© 2023, todos  los derechos reservados</p>

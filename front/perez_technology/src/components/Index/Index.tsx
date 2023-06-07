@@ -11,8 +11,9 @@ const Index: FC<{upOrDown: boolean}> = ({upOrDown}) => {
             <Navbar upOrDown = {upOrDown} />
             <Inicio/>
             <Nosotros/>
+            {/* Aqui va */}
             <Contacto/>
-            <div style={{height: "2000px"}}></div>
+            {/* <div style={{height: "2000px"}}></div> */}
             <Footer/>
         </>
     )
