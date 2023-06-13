@@ -29,7 +29,7 @@ const Beneficios = () => {
         <div className={`Beneficios ${isVisible?'visible':''}`} ref={ref}   >
             <div className='ct1'>
                 <div className='ctImg'>
-                    <img src="./src/assets/background/background5.jpg" alt="" />
+                    <img src="./src/assets/background/background11.jpg" alt="" />
                 </div>
             </div>
             <div className='ct2'>
@@ -37,7 +37,7 @@ const Beneficios = () => {
                     Beneficios
                 </div>
                 <div className='title'>
-                    ¿Por qué elegir Taller Celulares para su reparación?
+                    ¿Por qué elegir Perez Technology para su reparación?
                 </div>
                 <div className='divider'>
                     <div></div>

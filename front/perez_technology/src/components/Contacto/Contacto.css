@@ -5,4 +5,5 @@
     width: 100%;
     background: url("./src/assets/background/backgroundContact.svg") no-repeat center/cover ; 
     background-size: 100% 100%;
+    margin-bottom: 150px;
 }

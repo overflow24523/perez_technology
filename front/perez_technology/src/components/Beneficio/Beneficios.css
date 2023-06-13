@@ -11,7 +11,6 @@
     margin-right: 5px;
 }
 
-
 .Beneficios .ct1 .ctImg img{
     z-index: 3;
 }
@@ -21,34 +20,27 @@
 }
 
 .Beneficios .ct2 {
-    
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin-left: 5px;
-
 }
 
 
 .Beneficios .ct2 .title1 {
-
     width: 100%;
     font-size: 18px;
     color: #0069ba;
     margin-bottom: 30px;
     font-weight: 700;
-
 }
 
 .Beneficios .ct2 .title {
-
     font-size: 30px;
     color: #0069ba;
     font-weight: 800;
     margin-bottom: 30px;
-
 }
 
 .Beneficios .ct2 .divider{
@@ -64,7 +56,6 @@
 }
 
 .Beneficios  .descripcion{
-
     margin-bottom: 0px;
     font-weight: 600;
     color: rgb(103, 98, 98);
@@ -75,12 +66,10 @@
     margin-top: -5px;
     /* border: 1px solid black; */
     width: 100%;
-    
 }
 
 
 .Beneficios .ctList > li {
-
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 20px;
@@ -88,9 +77,7 @@
     font-weight: 300;
     list-style-type: none;
     display: flex;
-    
     align-items: center ;
-
 }
 
 

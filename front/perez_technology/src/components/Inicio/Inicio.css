@@ -12,7 +12,7 @@
 .Inicio .ct1{
     width: 90%;
     height: calc(80vh - 50px);
-    background: url('./src/assets/background/background10.jpeg') no-repeat center/cover;
+    background: url('./src/assets/background/background12.jpg') no-repeat center/cover;
     background-size: 100% 100%;
     z-index: 1;
 }
