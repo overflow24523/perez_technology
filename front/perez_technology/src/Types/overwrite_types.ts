@@ -1,5 +1,5 @@
-import { CSSProperties } from "react";
-
+import React from "react";
+React.Children 
 declare module "react" {
   interface CSSProperties {
     "--size"?: string;
@@ -9,3 +9,5 @@ declare module "react" {
     "--delay"?: string;
   }
 }
+
+

@@ -1,6 +1,5 @@
-import { RiFacebookBoxFill, RiInstagramFill, RiMailSendFill } from 'react-icons/ri'
 import './Footer.css'
-import BtEnviar from '../BtEnviar/BtEnviar';
+
 import FooterImportado from '../FooterImportado/FooterImportado';
 const Footer = () => {
     return <div className='Footer'>
