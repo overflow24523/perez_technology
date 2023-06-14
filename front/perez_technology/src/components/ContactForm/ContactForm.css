@@ -1,4 +1,4 @@
-.container {
+.ContactForm.container {
     width: 350px;
     height: 400px;
     display: flex;
@@ -13,7 +13,7 @@
     margin-left: 0px;
   }
   
-  .container form .descr {
+.ContactForm.container form .descr {
     font-size: 20px;
     font-weight: 500;
     color: #e8e8e8;
@@ -22,18 +22,18 @@
     text-align: center;
   }
   
-  .form {
+ .ContactForm .form {
     display: flex;
     flex-direction: column;
   }
   
-  .input, textarea {
+ .ContactForm .input, textarea {
     margin: 1em 0 1em 0;
     width: 300px;
     position: relative;
   }
   
-  .input input, textarea {
+ .ContactForm .input input, textarea {
     font-size: 100%;
     padding: 0.7em;
     outline: none;
@@ -46,7 +46,7 @@
     resize: none;
   }
   
-  .input label {
+.ContactForm  .input label {
     font-size: 100%;
     position: absolute;
     left: 0;
@@ -58,26 +58,26 @@
     text-transform: uppercase;
   }
   
-  .input :is(input:focus, input:valid)~label {
+.ContactForm  .input :is(input:focus, input:valid)~label {
     transform: translateY(-50%) scale(.9);
     margin: 0em;
     padding: 0.4em;
     background: transparent;
   }
   
-  .input textarea:focus ~ label,
-  .input textarea:valid ~ label {
+.ContactForm  .input textarea:focus ~ label,
+.ContactForm  .input textarea:valid ~ label {
     transform: translateY(-50%) scale(.9);
     margin: 0em;
     padding: 0.4em;
     background: transparent;
   }
   
-  .inputGroup :is(input:focus, input:valid) {
+.ContactForm  .inputGroup :is(input:focus, input:valid) {
     border-color: rgb(37, 37, 211);
   }
   
-  .form button {
+ .ContactForm .form button {
     color: #e8e8e8;
     font-size: 15px;
     align-self: flex-start;
@@ -91,7 +91,7 @@
     overflow: hidden;
   }
   
-  .form button:before {
+ .ContactForm .form button:before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -103,11 +103,11 @@
     transition: opacity 0.3s ease-in-out;
   }
   
-  .form button:hover:before {
+ .ContactForm .form button:hover:before {
     opacity: 0.2;
   }
   
-  .form button:hover {
+ .ContactForm .form button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
