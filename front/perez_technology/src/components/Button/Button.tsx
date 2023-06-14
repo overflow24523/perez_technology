@@ -2,10 +2,14 @@ import { FC } from 'react';
 import { Botton } from '../../Types/types';
 import './Button.css'
 
-const Button: FC<Botton> = ({ texto, clase }) => {
+const Button: FC<Botton> = ({ texto, clase, mPointH }) => {
     return (
-        <button  className={clase}>
-            <a href="/login">
+        <button  className={clase} onClick={(arg)=>{
+                arg.preventDefault()
+                arg.stopPropagation()
+                mPointH(1)
+            }}>
+            <a href="#">
                 <div className='ctText'>
                     {texto}
                 </div>

@@ -3,7 +3,7 @@ import { RiUserFill, RiLockPasswordFill, RiPhoneFill } from "react-icons/ri";
 import { actionable } from "../../Types/types";
 
 
-const Register: FC<actionable> = ({ action }) => {
+const Register: FC<actionable & {mPointH: (arg: number)=>void }> = ({ action, mPointH }) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -26,7 +26,7 @@ const Register: FC<actionable> = ({ action }) => {
   return (
     <div className="content">
       <div className="logo-container" style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
-        <img src="./src/assets/favicon/favicon.png" width={64} height={64} alt="Logo" />
+        <img src="./src/assets/favicon/favicon.png" width={64} height={64} alt="Logo" onClick={()=>{mPointH(0)}} />
         <h1 className="form-title">Registrarse</h1>
       </div>
       <form onSubmit={handleSubmit}>

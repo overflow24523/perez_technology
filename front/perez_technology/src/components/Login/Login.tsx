@@ -5,21 +5,21 @@ import Register from '../Register/Register';
 import { FC } from 'react';
 import { actionable } from '../../Types/types';
 
-const Login: FC<{ mount: string } & actionable> = ({ mount, action }) => {
-    let componentToRender = <LoginForm  action = {action} />
+const Login: FC<{ mount: string  , mPointH: (arg: number)=>void} & actionable> = ({ mount, action , mPointH }) => {
+    let componentToRender = <LoginForm  action = {action}  mPointH={(arg: number)=>{mPointH(arg)}}  />
 
     switch (mount) {
         case 'login':
-            componentToRender = <LoginForm action={action}   />
+            componentToRender = <LoginForm action={action}  mPointH={(arg: number)=>{mPointH(arg)}}    />
             break
         case 'register':
-            componentToRender = <Register action={action} />
+            componentToRender = <Register action={action}  mPointH={(arg: number)=>{mPointH(arg)}}  />
             break
         case 'forgot':
-            componentToRender = <ForgotPassword action={action}/>
+            componentToRender = <ForgotPassword action={action}  mPointH={(arg: number)=>{mPointH(arg)}} />
             break
         default: 
-            componentToRender =  <LoginForm action={action} />
+            componentToRender =  <LoginForm action={action}  mPointH={(arg: number)=>{mPointH(arg)}}  />
             break 
     }
 

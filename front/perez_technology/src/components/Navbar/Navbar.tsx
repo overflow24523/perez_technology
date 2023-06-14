@@ -6,12 +6,11 @@ import './Navbar.css';
 import Button from '../Button/Button';
 
 
-const Navbar: FC<{upOrDown: boolean}> =({upOrDown})=>{
+const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void }> =({upOrDown, mPointH})=>{
 
     const IsOpen = true
     const [ isOpen, setOpen ] = useState(IsOpen)
     
-
     const triggerMenu  = (arg: boolean) =>{
         setOpen(arg)    
     }
@@ -50,7 +49,7 @@ const Navbar: FC<{upOrDown: boolean}> =({upOrDown})=>{
             </div>
             <Menu open={isOpen} closeHandler = {triggerMenu} />
             <div className='CtRecervar' data-aos="fade-left">
-                <Button texto={"ENTRAR"}  clase={"btnRecervar"} />
+                <Button texto={"ENTRAR"}  clase={"btnRecervar"}  mPointH = {(arg: number)=>{mPointH(arg)}} />
             </div>  
         </div>
     )

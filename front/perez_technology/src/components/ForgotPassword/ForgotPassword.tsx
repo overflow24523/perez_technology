@@ -2,12 +2,12 @@ import { RiArrowLeftCircleFill } from "react-icons/ri";
 import {FC} from 'react'
 import { actionable } from "../../Types/types";
 
-const ForgotPassword: FC<actionable> = ({action}) => {
+const ForgotPassword: FC<actionable & {mPointH: (arg: number)=> void}> = ({action, mPointH}) => {
     return (
         <div className="content">
             <div className="login-container">
                 <div className="logo-container" style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
-                    <img src="./src/assets/favicon/favicon.png" width={64} height={64} alt="Logo" />
+                    <img src="./src/assets/favicon/favicon.png" width={64} height={64} alt="Logo" onClick={()=>{mPointH(0)}} />
                     <h1 className="form-title">Recuperar contraseña</h1>
                 </div>
                 <div className="form-container">

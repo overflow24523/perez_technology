@@ -13,7 +13,8 @@ type MenuElement = {
 
 type Botton = {
     texto: string,
-    clase: string
+    clase: string,
+    mPointH: (arg: number)=>void
 }
 
 type tIconoDescriptivo = {

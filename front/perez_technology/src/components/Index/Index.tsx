@@ -5,10 +5,10 @@ import Contacto from "../Contacto/Contacto"
 import Inicio from '../Inicio/Inicio';
 import Nosotros from "../Nosotros/Nosotros";
 
-const Index: FC<{upOrDown: boolean}> = ({upOrDown}) => {
+const Index: FC<{upOrDown: boolean,  mPointH: (arg: number) => void}> = ({upOrDown, mPointH}) => {
     return (
         <>
-            <Navbar upOrDown = {upOrDown} />
+            <Navbar upOrDown = {upOrDown} mPointH = {(arg)=>{mPointH(arg)}}  />
             <Inicio/>
             <Nosotros/>
             {/* Aqui va */}
