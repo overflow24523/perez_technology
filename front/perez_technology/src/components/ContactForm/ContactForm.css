@@ -1,114 +1,115 @@
-.ContactForm .login {
-    color: #1259c4;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    font-weight: bold;
-    font-size: x-large;
-}
-
-.ContactForm .card {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
+.container {
     width: 350px;
-    flex-direction: column;
-    gap: 35px;
-    background: #dde1e7;
-    box-shadow: 16px 16px 32px #8382829c,
-        -16px -16px 32px #8585858f;
-    border-radius: 8px;
-}
-
-.ContactForm .inputBox {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 250px;
-}
-
-.ContactForm .inputBox input,
-.ContactForm .inputBox textarea {
-    width: 100% !important;
-    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #396afc;
+    background: linear-gradient(to right, #005c97, #363795);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  .container form .descr {
+    font-size: 20px;
+    font-weight: 500;
+    color: #e8e8e8;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input, textarea {
+    margin: 1em 0 1em 0;
+    width: 300px;
+    position: relative;
+  }
+  
+  .input input, textarea {
+    font-size: 100%;
+    padding: 0.7em;
     outline: none;
+    color: #e8e8e8;
     border: none;
-    color: #1259c4;
-    font-size: 1em;
+    border-bottom: 2px solid #e8e8e8;
     background: transparent;
-    border-left: 2px solid #1259c4;
-    border-bottom: 2px solid #1259c4;
-    transition: 0.1s;
-    border-bottom-left-radius: 8px;
-}
-
-.ContactForm .inputBox span {
-    margin-top: 5px;
+    border-radius: none;
+    width: 100%;
+    resize: none;
+  }
+  
+  .input label {
+    font-size: 100%;
     position: absolute;
     left: 0;
-    margin-left: 10px;
-    padding: 10px;
+    color: #e8e8e8;
+    padding: 0.7em;
+    margin-left: 0.1em;
     pointer-events: none;
-    font-size: 12px;
-    color: #1259c4;
+    transition: all 0.5s ease;
     text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 3px;
-    border-radius: 8px;
-
-    transform: translateY(-43px);
-    -webkit-transform: translateY(-43px);
-    -moz-transform: translateY(0px);
-}
-
-.ContactForm .inputBox input:valid~span,
-.ContactForm .inputBox input:focus~span{
-    font-size: 0.8em;
-    padding: 5px 10px;
-    background: #1259c4;
-    letter-spacing: 0.2em;
-    color: #fff;
-    border: 2px;
-
-    transform: translateX(113px) translateY(-58px);
-    -webkit-transform: translateX(113px) translateY(-58px);
-    -moz-transform: translateX(130px) translateY(-17px);
-}
-
-.ContactForm textarea{
-    resize: none !important;
-}
-
-
-
-.ContactForm .inputBox textarea:valid~span,
-.ContactForm .inputBox textarea:focus~span {
-    transform: translateX(113px) translateY(-120px);
-    font-size: 0.8em;
-    padding: 5px 10px;
-    background: #1259c4;
-    letter-spacing: 0.2em;
-    color: #fff;
-    border: 2px;
-
-    transform: translateX(113px) translateY(-120px);
-    -webkit-transform: translateX(113px) translateY(-120px);
-    -moz-transform: translateX(140px) translateY(-15px);
-}
-
-
-
-.ContactForm .inputBox input:valid,
-.ContactForm .inputBox input:focus,
-.ContactForm .inputBox textarea:focus,
-.ContactForm .inputBox textarea:valid {
-    border: 2px solid #6b79f8;
-    border-radius: 8px;
-}
-
-
-.ContactForm .inputBox.textarea span {
-    transform: translateY(-43px);
-    -webkit-transform: translateY(-43px);
-    -moz-transform: translateY(52px);
-}
+  }
+  
+  .input :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    padding: 0.4em;
+    background: transparent;
+  }
+  
+  .input textarea:focus ~ label,
+  .input textarea:valid ~ label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    padding: 0.4em;
+    background: transparent;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(37, 37, 211);
+  }
+  
+  .form button {
+    color: #e8e8e8;
+    font-size: 15px;
+    align-self: flex-start;
+    padding: 0.6em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .form button:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .form button:hover:before {
+    opacity: 0.2;
+  }
+  
+  .form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  

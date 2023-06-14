@@ -21,7 +21,7 @@ const Contacto = ()=>{
         if(ref.current){
             observer.observe(ref.current)
         }
-
+            
         return ()=>observer.disconnect()
 
     }, [])
