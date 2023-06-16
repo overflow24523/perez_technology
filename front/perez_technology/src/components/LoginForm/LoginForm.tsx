@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useState } from "react";
+import React, { useState } from "react";
 import { RiUserFill, RiLockPasswordFill } from "react-icons/ri";
 import { actionable } from "../../Types/types";
 
