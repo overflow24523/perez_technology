@@ -4,7 +4,7 @@
   "description": "Este es el lado del servidor del proyecto perez_technology",
   "main": "app.js",
   "scripts": {
-    "test":  "node app.js",
+    "test": "node app.js",
     "start": "node app.js",
     "build": "npm install"
   },
@@ -32,8 +32,5 @@
     "mysql2": "^3.2.3",
     "sequelize": "^6.31.0",
     "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
   }
 }

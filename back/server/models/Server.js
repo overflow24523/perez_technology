@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const fileUpload = require('express-fileupload')
+const { db } = require('../db/conexion')
 
 class Server {
     constructor(arg) {
@@ -36,9 +37,17 @@ class Server {
 
     }
 
-    upDB() {
-        // Aqui se enciende la base de datos.
-
+    async upDB() {
+        try{
+            await db.authenticate()
+            console.log("DB Online")
+        }catch(err){
+            console.log(err)
+            // console.log("Error al levantar la base de datos")
+            // throw Error("Error al levantar la base de datos")
+            
+        }
+        
     }
 
     routes() {
