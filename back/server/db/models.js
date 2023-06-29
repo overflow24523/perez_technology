@@ -1,8 +1,8 @@
 const { DataTypes } = require("sequelize");
 const { db } = require("./conexion");
 
-const Usuario  = db.define('user', {
-    name: {
+const Usuario  = db.define('user', { 
+    nombre: {
         type: DataTypes.STRING
     }, 
     password:{
@@ -11,12 +11,34 @@ const Usuario  = db.define('user', {
     id_rol: {
         type: DataTypes.NUMBER
     }, 
-    id_detalles: {
-        type: DataTypes.NUMBER
+    phone: {
+        type: DataTypes.STRING
     }
+})
 
+const Contacto = db.define('contacto' , {
+    nombre: {
+        type: DataTypes.STRING
+    },
+    email: {
+        type: DataTypes.STRING
+    },
+    telefono: {
+        type: DataTypes.STRING
+    }, 
+    mensaje: {
+        type: DataTypes.STRING
+    }
+})
+
+const Rol = db.define('role' , {
+    label:{
+        type: DataTypes.STRING
+    }
 })
 
 module.exports = {
-    Usuario
+    Contacto,
+    Usuario,
+    Rol
 }

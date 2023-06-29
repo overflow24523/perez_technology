@@ -15,6 +15,11 @@ const ContactForm = () => {
         </div>
 
         <div className="input">
+          <input required={true} autoComplete="off" name="phone" type="text" />
+          <label htmlFor="phone">Telefono</label>
+        </div>
+
+        <div className="input">
           <textarea required={true} cols={30} rows={1} id="message"></textarea>
           <label htmlFor="message">Message</label>
         </div>
