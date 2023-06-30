@@ -10,6 +10,11 @@ type MenuElement = {
     pointer: number
 } & Partial<{dtmAnimationType:string}>
 
+type dtmResponse = {
+    msg: string, 
+    status: number
+}
+
 
 type Botton = {
     texto: string,
@@ -37,4 +42,4 @@ type tBtnSphone = {
 }
 
 
-export type { actionable, MenuElement, Botton , tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone}
+export type { actionable, MenuElement, Botton , tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse}

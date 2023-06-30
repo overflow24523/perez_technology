@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { register, login, contactar, getUsers, changeRol } = require('../controllers/post')
+const { register, login, contactar, getUsers, changeRol, getContactos, deleteContacto } = require('../controllers/post')
 const { validarCampos } = require('../middlewares/validar-campos')
 const { check } = require('express-validator')
 const { security_post } = require('../middlewares/security')
@@ -44,5 +44,12 @@ app.post('/changeRol' , [security_post ,
   check('target' , 'El target es obligatorio').isNumeric(), 
   check('rol' , 'El nuevo rol es obligatorio').isNumeric(), 
    validarCampos] , changeRol)
+
+app.post('/getContactos' , [security_post] , getContactos )
+
+app.post('/deleteContacto' , [ 
+   security_post,
+   check('target' , 'El target es obligatorio').isNumeric() , 
+   validarCampos ] , deleteContacto )
 
 module.exports = app

@@ -137,6 +137,42 @@ const changeRol = async(req = request , res = response) =>{
 
 }
 
+const getContactos = async (req = request , res  = response)=>{
+    const {payload } = req
+
+    if(payload.rol!=2) return res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
+
+    try{
+        const tempContactos  = await Contacto.findAll() 
+
+        res.status(200).json({status: 200 , msg: 'Contactos resueltos con éxito' , bag: tempContactos})
+    }catch(err){
+        return res.status(200).json({status: 500, msg: 'No podemos obtener mensajes en este momento', err})
+    }
+}
+
+const deleteContacto   = async (req = request , res = response) =>{
+    const  {payload} =req 
+    if(payload.rol!=2) return res.status(200).json({status: 401 , msg: 'No dispone de un privilegio requerido'})
+
+    const {target} = req.body
+    try {
+        const tempContacto = await Contacto.findByPk(target)
+
+        if(!tempContacto) return res.status(200).json({status: 400, msg: 'Debe proporcionar un contacto válido'})
+        
+        await tempContacto.destroy()
+
+        res.status(200).json({status: 200, msg: 'Contacto eliminado con exito'})
+
+    }catch(err){
+        res.status(200).json({status: 500, msg: 'No podemos eliminar contactos en este momento'})
+    }
+ 
+
+}
+
+
 
 
 module.exports = {
@@ -144,5 +180,7 @@ module.exports = {
     login,
     register,
     getUsers , 
-    changeRol
+    changeRol, 
+    getContactos, 
+    deleteContacto
 }

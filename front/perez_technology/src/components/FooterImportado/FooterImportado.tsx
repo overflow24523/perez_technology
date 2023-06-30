@@ -78,7 +78,7 @@ const FooterImportado = () => {
           <div className="col-md-3 footer-ns animated fadeInRight">
             <h4>Newsletter</h4>
             <p>Deja tu correo para tenerte al tanto de novedades y nuevos servicios</p>
-            <p>
+            <div>
               <div className="input-group">
                 <input
                   type="email"
@@ -90,7 +90,7 @@ const FooterImportado = () => {
                 </span>
               </div>
               {/* /input-group */}
-            </p>
+            </div>
           </div>
         </div>
       </footer>
