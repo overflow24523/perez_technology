@@ -1,0 +1,26 @@
+.AdminNavbar{
+    border: 1px solid black ;
+    display: flex;
+}
+
+.AdminNavbarBrand{
+    border: 1px solid black ;
+    padding: 5px;
+}
+
+.AdminNavbarNavbar{
+    display:  flex;
+    flex: 1;
+    border: 1px solid black;
+    justify-content: space-between;
+
+}
+
+.AdminNavbarNavbarItem{
+    border: 1px solid black;
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

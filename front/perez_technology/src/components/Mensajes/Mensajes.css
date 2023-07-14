@@ -1,0 +1,17 @@
+.AdminMensajes{
+    background-color: aqua;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.AdminMensajes .ctProperties{
+    border: 1px solid black;
+}
+
+
+.AdminMensajes .ctMensajes{
+    border: 1px solid black;
+}

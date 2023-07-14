@@ -2,16 +2,22 @@ type actionable = {
     action: (arg: string) => void;
 }
 
+type DialogProps = {
+    isOpen: boolean;
+    onClose: () => void;
+    children: React.ReactNode;
+};
+
 type MenuElement = {
     texto: string,
     accion: (arg: number) => void,
     clase: string,
     target: string,
     pointer: number
-} & Partial<{dtmAnimationType:string}>
+} & Partial<{ dtmAnimationType: string }>
 
 type dtmResponse = {
-    msg: string, 
+    msg: string,
     status: number
 }
 
@@ -19,27 +25,47 @@ type dtmResponse = {
 type Botton = {
     texto: string,
     clase: string,
-    mPointH: (arg: number)=>void
+    mPointH: (arg: number) => void
 }
 
 type tIconoDescriptivo = {
-    src: string, 
-    title   :string,
+    src: string,
+    title: string,
     descripcion: string
 }
 
 
 type tIconDescriptionTitle = {
-    title: string , 
-    description:string,
+    title: string,
+    description: string,
     src: string,
     type: string
 }
 
 type tBtnSphone = {
-    src: string , 
-    handler: ()=>void
+    src: string,
+    handler: () => void
+}
+
+type tpUsuario = {
+    name: string,
+    phone: string,
+    img: string,
+    role: string,
+    uid: number,
+    deleteUser: (target: number) => void,
+    showToolbox: (target: number)=> void 
+
+}
+
+type tpMensaje = {
+    name: string,
+    phone: string,
+    img: string,
+    uid: number,
+    body: string,
+    deleteMensaje: (arg: number) => void
 }
 
 
-export type { actionable, MenuElement, Botton , tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse}
+export type { actionable, MenuElement, Botton, tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse, tpUsuario, DialogProps, tpMensaje}

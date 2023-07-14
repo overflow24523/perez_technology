@@ -1,0 +1,82 @@
+.Mensaje{
+    border: 1px solid black;
+    display:  grid;
+    grid-template-columns: 96px 1fr 1fr 96px;
+
+}
+
+.Mensaje > div{
+    border: 1px solid black;
+}
+
+.Mensaje .ctGmail{
+    display: flex;
+}
+
+.Mensaje .ctGmail > img{
+    width: 96px;
+    height: 96px;
+}
+
+
+.Mensaje .ctNameAndPhone{
+    display: flex;
+    flex-direction: column;
+}
+
+.Mensaje .ctNameAndPhone .ctName , .Mensaje .ctNameAndPhone .ctPhone{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    flex: 1;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+
+.Mensaje .ctMsgBody{
+    display: flex;
+    
+    align-items: top;
+    padding: 5px;
+}
+
+
+
+.Mensaje .ctDeleteAndView{
+    display: flex;
+    flex-direction: column;
+}
+
+.Mensaje .ctDeleteAndView .ctDelete{
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.Mensaje .ctDeleteAndView .ctDelete > * {
+    width: 48px;
+    height: 48px;
+    color: rgb(214, 85, 85);
+}
+
+.Mensaje .ctDeleteAndView .ctView{
+    display: flex;
+    flex: 1 ; 
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.Mensaje .ctDeleteAndView .ctView > * {
+    width: 48px;
+    height: 48px;
+    color: rgb(85, 190, 214);
+}
+

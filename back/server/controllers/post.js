@@ -99,11 +99,14 @@ const getUsers = async  (req  =request, res = response)=>{
     if( rol != 2 ) return res.status(200).json({status: 401 , msg: 'Usted no dispone de un privilegio requerido'})
 
     try{
-        let Usuarios = await Usuario.findAll()
+        let Usuarios = await Usuario.findAll({
+            include:[{model: Rol}]
+        })
 
         Usuarios = Usuarios.map((item , index) => {
-            const  { id , nombre, phone, id_rol: rol}  =  item 
-            return {id , nombre , phone , rol}
+            const  { id , nombre, phone, id_rol: rol , role}  =  item 
+            return {id, nombre, phone , rol, label: role.label}
+            
         })
 
         res.status(200).json({status: 200 , msg: "Usuarios resueltos con exito" , bag: Usuarios})
@@ -136,6 +139,32 @@ const changeRol = async(req = request , res = response) =>{
     }
 
 }
+
+const deleteUser = async (req = request, res = response) => {
+    const {payload } = req
+    const {target } = req.body
+
+    if(payload.rol !=2 ) return res.status(200).json({status: 401, msg: 'No dispone de un privilegio requerio'})
+    
+    
+    
+
+    try{
+        const tempUser = await Usuario.findByPk(target)
+        if(!tempUser) return res.status(200).json({status: 400, msg: 'Debe proporcionar un usuario válido'})
+
+        if(tempUser.id == payload.uid) return res.status(200).json({status: 400, msg:'No puede borrar su propia cuenta'})
+
+        await tempUser.destroy()
+
+        res.status(200).json({status: 200, msg: 'Usuario eliminado con éxito'})
+        
+
+    }catch(err){
+        return res.status(200).json({status: 500, msg: 'Algo salió mal' })
+    }
+}
+
 
 const getContactos = async (req = request , res  = response)=>{
     const {payload } = req
@@ -182,5 +211,6 @@ module.exports = {
     getUsers , 
     changeRol, 
     getContactos, 
-    deleteContacto
+    deleteContacto,
+    deleteUser
 }

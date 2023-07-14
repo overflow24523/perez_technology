@@ -37,6 +37,8 @@ const Rol = db.define('role' , {
     }
 })
 
+Usuario.belongsTo(Rol , {foreignKey: 'id_rol'})
+
 module.exports = {
     Contacto,
     Usuario,

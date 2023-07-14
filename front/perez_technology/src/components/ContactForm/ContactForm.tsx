@@ -50,7 +50,7 @@ const ContactForm = () => {
     return (
         <div className="ContactForm container">
             <form className="form" onSubmit={handlerSubmit}>
-                <div className="descr">Contact us</div>
+                <div className="descr">Contáctanos</div>
                 <div className="input">
                     <input required={true} name='name' value={formData.name} onChange={handlerChange} autoComplete="off" type="text" />
                     <label htmlFor="name">Nombre</label>

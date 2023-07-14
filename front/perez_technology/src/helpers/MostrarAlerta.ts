@@ -1,7 +1,7 @@
 import Swal, { SweetAlertIcon } from 'sweetalert2';
 import { dtmResponse } from '../Types/types';
 
-export const mostrarAlerta = (arg: dtmResponse ) => {
+export const mostrarAlerta = (arg: dtmResponse , toast = true) => {
   const {msg , status} = arg
   let tipo: SweetAlertIcon = 'info'
 
@@ -27,5 +27,7 @@ export const mostrarAlerta = (arg: dtmResponse ) => {
     title: msg,
     showConfirmButton: false,
     timer: 3000,
+    toast ,
+    position: 'top-right' 
   });
 };
