@@ -10,7 +10,7 @@ type DialogProps = {
 
 type MenuElement = {
     texto: string,
-    accion: (arg: number) => void,
+    accion: ((arg: number) => void )  | ( (arg: number , target: string) => void ),
     clase: string,
     target: string,
     pointer: number

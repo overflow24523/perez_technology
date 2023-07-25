@@ -6,12 +6,13 @@ import Login_Page from './pages/Login_Page';
 import './dtmAnimations.css'
 import './dtmMotion.css'
 import Admin_page from './pages/Admin_Page';
+import Almacen_page from './pages/Almacen_page';
 
 
 const App = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [upOrDown , setUpOrDown] = useState(true)
-  const [mPoint, setMpoint] = useState(2)
+  const [mPoint, setMpoint] = useState(3)
 
   const handleScroll = (event: any) => {
 
@@ -36,7 +37,10 @@ const App = () => {
       current_component = <Login_Page  mPointH = {(arg: number)=>{setMpoint(arg)}}  />
       break
     case 2:
-      current_component = < Admin_page mPointH={(arg: number)=>{setMpoint(arg)}}/>
+      current_component = <Admin_page upOrDown = {upOrDown}  mPointH={(arg: number)=>{setMpoint(arg)}}/>
+      break
+    case 3:
+      current_component =  <Almacen_page  upOrDown = {upOrDown}  mPointH={(arg: number)=>{setMpoint(arg)}}  />
       break
     
     default:

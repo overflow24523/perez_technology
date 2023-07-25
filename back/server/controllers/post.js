@@ -28,7 +28,7 @@ const login = async  (req = request , res = response)=>{
         })
 
         if(!tempUser){
-            return res.status(200).json({status: 400 , msg: "Usuario o contraseña incorrectos"})
+            return res.status(200).json({status: 400 , msg: "Usuario o contraseña incorrectos"  })
         }else{
             const {password: clave} = tempUser
             const autenticate  = await  bcryptjs.compareSync(password , clave)

@@ -1,0 +1,39 @@
+.Nabvar{
+    width: 100%;
+    position: fixed;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* border-bottom: 1px solid #01c4fa; */
+    box-shadow: #01c4fa 0px 1px 5px ;
+    transform: translateY(-150px);
+    transition: all 0.5s;
+    min-height: 72px;
+    z-index: 50;
+}
+
+.Nabvar.active{
+    transform: translateY(0px);
+}
+
+.ctName{
+    
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 102px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+
+.TriggerMenu{
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+

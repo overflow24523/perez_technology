@@ -37,10 +37,58 @@ const Rol = db.define('role' , {
     }
 })
 
+
+const Proveedor  = db.define('proveedor' , {
+    nombre: {
+        type: DataTypes.STRING
+    },
+    descripcion:{
+        type: DataTypes.STRING
+    }
+})
+
+const Categoria   = db.define('categorias' , {
+    label:{
+        type: DataTypes.STRING
+    }
+})
+
+const Producto = db.define('producto', {
+    nombre:{
+        type: DataTypes.STRING
+    },
+    descripcion: {
+        type: DataTypes.STRING
+    },
+    codigo: {
+        type: DataTypes.STRING
+    },
+    id_categoria: {
+        type: DataTypes.NUMBER
+    },
+    precio: {
+        type: DataTypes.NUMBER
+    },
+    cantidad: {
+        type: DataTypes.NUMBER
+    },
+    id_proveedor: {
+        type: DataTypes.NUMBER
+    }
+})
+
+
+
 Usuario.belongsTo(Rol , {foreignKey: 'id_rol'})
+
+Producto.belongsTo(Categoria , {foreignKey: 'id_categoria'})
+Producto.belongsTo(Proveedor , {foreignKey: 'id_proveedor'})
 
 module.exports = {
     Contacto,
     Usuario,
-    Rol
+    Rol,
+    Proveedor, 
+    Categoria,
+    Producto
 }

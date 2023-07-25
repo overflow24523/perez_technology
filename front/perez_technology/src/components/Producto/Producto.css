@@ -1,0 +1,84 @@
+.Producto{
+    border: 1px solid black;
+    margin: 5px;
+    width: 100% ;
+    display: grid;
+    grid-template-columns: 192px 1fr 1fr 96px     ;
+    grid-template-rows: 1fr;
+}
+.Producto > div{
+    border: 1px solid black;
+}
+
+
+.Producto  .ctCB{
+    display: flex;   
+}
+
+.Producto  .ctCB img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 96px;
+}
+
+.Producto .ctNameAndCat{
+    display: flex;
+    flex-direction: column;
+}
+
+.Producto .ctNameAndCat .ctName , .Producto .ctNameAndCat .ctCat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 102px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+
+.Producto .ctPrecioAndAlmacen{
+    display: flex;
+    flex-direction: column ;
+}
+
+.Producto .ctPrecioAndAlmacen .ctPrecio , .Producto .ctPrecioAndAlmacen .ctAlmacen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 102px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+
+.Producto .ctDeleteAndTools{
+    display: flex;
+    flex-direction: column;
+}
+
+.Producto .ctDeleteAndTools .ctDelete , .Producto .ctDeleteAndTools .ctTools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex: 1;
+    border: 1px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+

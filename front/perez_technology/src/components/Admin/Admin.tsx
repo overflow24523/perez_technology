@@ -1,10 +1,11 @@
 import './Admin.css'
 import { FC, useState } from 'react';
-import AdminNavbar from '../AdminNavbar/AdminNavbar';
-import AdminLayout from '../AdminLayout/AdminLayout';
 
-const Admin: FC<{ mPointH: (arg: number) => void }>  = ({mPointH})=>{
-    const [layout, setLayout] = useState(0)
+import AdminLayout from '../AdminLayout/AdminLayout';
+import Navbar from '../docker/admin/Navbar/Navbar';
+
+const Admin: FC<{ mPointH: (arg: number) => void, upOrDown: boolean }>  = ({mPointH ,upOrDown })=>{
+    const [layout, setLayout] = useState(2)
     const handlerLayout = (arg: number)=>{
         if(arg==1){
             mPointH(0)
@@ -15,8 +16,8 @@ const Admin: FC<{ mPointH: (arg: number) => void }>  = ({mPointH})=>{
     }
 
     return <div className='Admin' onClick={()=>{mPointH}}>
-        
-        <AdminNavbar  jostick={handlerLayout} />         
+
+        <Navbar upOrDown={upOrDown} mPointH={mPointH} jostick={handlerLayout} />
         <AdminLayout layout={layout} />
         
     </div>

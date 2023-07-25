@@ -1,0 +1,39 @@
+.MenuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 1.4rem ;
+    margin: 0.1rem;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    color: #717275;
+    user-select: none;
+    -webkit-user-drag: element;
+    border-bottom: 4px solid transparent;
+    border-radius: 0px ;
+}
+
+
+
+.MenuItem{
+    color: #595959; 
+    text-decoration: none;
+}
+
+.MenuItem.active {
+    color: #269ff0;
+}
+
+.MenuItem.active, .MenuItem:hover {
+    border-bottom: 4px solid #046cc4;
+}
+
+
+
+@media (max-width: 1161px) {
+    .MenuItem {
+        padding: 15px 10px;
+    }
+}
+

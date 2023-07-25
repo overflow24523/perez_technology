@@ -1,0 +1,18 @@
+.Productos{
+    padding: 20px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+
+.Productos .ctEstadisticas{
+    display: flex;
+    border: 1px solid black;
+}
+
+
+.Productos .ctProductos{
+    display: flex;
+    border: 1px solid black;
+}
