@@ -67,5 +67,50 @@ type tpMensaje = {
     deleteMensaje: (arg: number) => void
 }
 
+type tpCategoria = {
+    id: number, 
+    label: string
+}
 
-export type { actionable, MenuElement, Botton, tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse, tpUsuario, DialogProps, tpMensaje}
+type tpProveedor = { 
+    id: number, 
+    nombre: string 
+}
+
+
+
+
+type tpProducto ={
+    uid: number
+    nombre: string, 
+    categoria: string 
+    precio: number,
+    cantidad: number,
+    descripcion: string ,
+    codigo: string, 
+    proveedor: string 
+}
+
+
+
+type tpProductModal = {
+    handlerClick: (arg: number)=>void,
+    onClose: () => void
+}
+
+type tpWindowBorderTop = {
+    onClose: ()=>void
+    onBack: ()=>void
+    title: string
+}
+
+type tpProductAddScreen = {
+    categoryList: []
+    proveedorList:[],
+    onCreateNew: ()=>void,
+    onClose: () => void
+}
+
+
+
+export type { actionable, MenuElement, Botton, tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse, tpUsuario, DialogProps, tpMensaje, tpProducto,tpProductModal , tpWindowBorderTop, tpProductAddScreen, tpProveedor , tpCategoria}

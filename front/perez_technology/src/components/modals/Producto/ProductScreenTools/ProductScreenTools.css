@@ -1,0 +1,33 @@
+.productoScreenTools {
+    padding: 5px;
+}
+
+
+.productoScreenTools .title{
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.productoScreenTools .ctOptions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.productoScreenTools .ctOptions > div{
+    display: flex;
+    border: 1px solid transparent;
+    padding: 5px;
+    margin: 1px ;
+    font-size: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.productoScreenTools .ctOptions > div:hover{
+    border: 1px solid black;
+}

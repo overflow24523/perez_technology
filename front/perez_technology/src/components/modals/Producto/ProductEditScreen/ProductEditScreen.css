@@ -1,0 +1,80 @@
+.ProductEditScreen{
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.ProductEditScreen .formEditProduct{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProductEditScreen .formEditProduct .frow{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+.ProductEditScreen .formEditProduct .frow .fcolumn input,  .ProductEditScreen .formEditProduct .frow .fcolumn select{
+    width: 100%;
+}
+
+
+.ProductEditScreen .formEditProduct .frow .fcolumn textarea{
+    width: 100%;
+    border: 1px solid black;
+    color: black ; 
+    font-size: 20px;
+    height: 100% ;
+    margin: -3px;
+}
+
+
+
+.ProductEditScreen .formEditProduct .frow .fcolumn{
+    display: flex;
+    flex: 1;
+}
+
+.ProductEditScreen .formEditProduct .rowEcual{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.ProductEditScreen .formEditProduct .rowEcual .btCancel , .ProductEditScreen .formEditProduct .rowEcual .btCreate{
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+
+
+.ProductEditScreen .formEditProduct .rowEcual .btCancel:hover , .ProductEditScreen .formEditProduct .rowEcual .btCreate:hover {
+    box-shadow: gray 1px 1px 1px ;       
+}
+
+
+.ProductEditScreen .formEditProduct .rowEcual .btCancel:active , .ProductEditScreen .formEditProduct .rowEcual .btCreate:active{
+    box-shadow: gray 1px 1px 1px  inset;       
+}
+
+
+
+
+
+

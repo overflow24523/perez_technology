@@ -1,4 +1,7 @@
+import Categorias from '../Categorias/Categorias'
 import Mensajes from '../Mensajes/Mensajes'
+import Productos from '../Productos/Productos'
+import Proveedores from '../Proveedores/Proveedores'
 import Usuarios from '../Usuarios/Usuarios'
 import './AdminLayout.css'
 import { FC } from 'react'
@@ -13,7 +16,13 @@ const AdminLayout: FC<{ layout: number }> = ({ layout }) => {
             children = <Mensajes />
             break;
         case 4:
-            children = <div> 4 </div>
+            children = <Categorias />
+            break;
+        case 5:
+            children = <Proveedores />
+        break;
+        case 6:
+            children = <Productos/>
             break;
         default:
             children = <div> Welcome </div>

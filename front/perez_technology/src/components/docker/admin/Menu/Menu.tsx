@@ -33,10 +33,12 @@ const Menu: React.FC<{open: boolean , closeHandler:  (arg: boolean) => void , jo
                 </div>
             </div>
 
-            <MenuItem texto = {"Ir al sitio"}      target="1"     accion={action}    pointer={0}  clase={`${itemActive[0]?'active':''} ` } dtmAnimationType='T1'/>
-            <MenuItem texto = {"Usuarios"}         target="2"     accion={action}    pointer={1}  clase={`${itemActive[1]?'active':''} ` } dtmAnimationType='T2'/>
-            <MenuItem texto = {"Mensajes"}         target="3"     accion={action}    pointer={2}  clase={`${itemActive[2]?'active':''} ` } dtmAnimationType='T3'/>
-            <MenuItem texto = {"Almacen"}          target="4"     accion={action}    pointer={3}  clase={`${itemActive[3]?'active':''} ` } dtmAnimationType='T1'/>
+            <MenuItem texto = {"Ir al sitio"}    target="1"     accion={action}    pointer={0}  clase={`${itemActive[0]?'active':''} ` } dtmAnimationType='T1'/>
+            <MenuItem texto = {"Usuarios"}       target="2"     accion={action}    pointer={1}  clase={`${itemActive[1]?'active':''} ` } dtmAnimationType='T2'/>
+            <MenuItem texto = {"Mensajes"}       target="3"     accion={action}    pointer={2}  clase={`${itemActive[2]?'active':''} ` } dtmAnimationType='T3'/>
+            <MenuItem texto = {"Categorías"}     target="4"     accion={action}    pointer={3}  clase={`${itemActive[3]?'active':''} ` } dtmAnimationType='T3'/>
+            <MenuItem texto = {"Proveedores"}    target="5"     accion={action}    pointer={4}  clase={`${itemActive[4]?'active':''} ` } dtmAnimationType='T2'/>
+            <MenuItem texto = {"Productos"}      target="6"     accion={action}    pointer={5}  clase={`${itemActive[5]?'active':''} ` } dtmAnimationType='T1'/>
             
     </div>)
     

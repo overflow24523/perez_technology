@@ -1,0 +1,17 @@
+.Proveedores{
+    padding: 20px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+
+.Proveedores .ctOptions{
+    border: 1px solid black;
+}
+
+.Proveedores .ctProveedores{
+    border: 1px solid black;
+}

@@ -67,18 +67,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 40px;
     flex: 1;
     border: 1px solid black;
-
+    cursor: pointer;
 }
 
 
+.Producto .ctDeleteAndTools .ctDelete{
+    color: rgb(174, 82, 82);
+}  
 
-
-
-
-
-
-
-
+.Producto .ctDeleteAndTools .ctTools{
+    color: gray ; 
+}

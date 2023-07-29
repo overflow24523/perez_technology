@@ -2,6 +2,8 @@
     padding: 20px;
     border: 1px solid black;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -12,7 +14,35 @@
 }
 
 
+.Productos .ctEstadisticas > div{
+    flex: 1;
+    border: 1px solid black;
+
+}
+
+
+.Productos .ctEstadisticas .ctCantidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.Productos .ctEstadisticas .ctAddProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.Productos .ctEstadisticas .ctAddProduct:hover{
+    border: 1px solid black ;
+    cursor: pointer;
+}
+
+
 .Productos .ctProductos{
     display: flex;
     border: 1px solid black;
+    flex-direction: column;
 }

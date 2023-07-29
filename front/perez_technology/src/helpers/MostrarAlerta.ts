@@ -3,7 +3,6 @@ import { dtmResponse } from '../Types/types';
 
 
 export const mostrarAlerta = (arg: dtmResponse , toast = true) => {
-
   if(!window.localStorage.getItem('alertQueue') ||  Number(window.localStorage.getItem('alertQueue')) == 0){
     window.localStorage.setItem('alertQueue' , String(1))
     lanzarAlerta(arg, toast)

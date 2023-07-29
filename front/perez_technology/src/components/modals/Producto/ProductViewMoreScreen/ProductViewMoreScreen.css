@@ -1,0 +1,25 @@
+.ProductViewMoreScreen{
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+.ProductViewMoreScreen .prow{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 1px dashed grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ProductViewMoreScreen .prow .pcolumn{
+    display: flex;
+    flex: 1;
+    font-size: 20px;   
+    
+}

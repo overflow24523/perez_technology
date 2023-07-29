@@ -1,0 +1,60 @@
+.CategoriaScreenEditar{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+}
+
+
+.CategoriaScreenEditar .formEditCategoria{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.CategoriaScreenEditar .formEditCategoria .frow{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+}
+
+
+.CategoriaScreenEditar .formEditCategoria .frow .fcolumn {
+    display: flex;
+    flex: 1; 
+    /* border: 1px solid black; */
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.CategoriaScreenEditar .formEditCategoria .frow .fcolumn input{
+    display: flex;
+    width: 100%;
+}
+
+.CategoriaScreenEditar .formEditCategoria .frow .fcolumn.ctBtEditar{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+.CategoriaScreenEditar .formEditCategoria .frow .fcolumn.ctBtEditar .btEditar{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    cursor: pointer ; 
+}
+
+
+.CategoriaScreenEditar .formEditCategoria .frow .fcolumn.ctBtEditar .btEditar:hover{
+    box-shadow: black 1px 1px 3px;
+}
+
+.CategoriaScreenEditar .formEditCategoria .frow .fcolumn.ctBtEditar .btEditar:active{
+    box-shadow: black 1px 1px 3px inset;
+}

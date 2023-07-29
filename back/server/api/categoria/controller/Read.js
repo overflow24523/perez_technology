@@ -8,7 +8,7 @@ const Read = async (req = request,res = response ) => {
 
     try{
         const tempCategorias  = await Categoria.findAll()
-        return res.status(200).json({status: 200, msg: 'Categorías obtenidas con éxito', tempCategorias})
+        return res.status(200).json({status: 200, msg: 'Categorías obtenidas con éxito', bag:tempCategorias})
 
     }catch(err){
         res.status(200).json({status: 500, msg: 'No podemos obtener categorías en este momento', err})
