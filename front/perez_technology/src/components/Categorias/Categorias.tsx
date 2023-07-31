@@ -9,6 +9,7 @@ import CategoriaScreenEditar from '../modals/Categoria/CategoriaScreenEditar/Cat
 const Categorias = ()=>{
     const [categoryList , setCategoryList] = useState<[]>([])
     const [categoryNumber , setCategoryNumber] = useState<number>(0)
+    
     const [rolebox , setRolebox] = useState<boolean>(false)
 
     const getCategorias = () => {
@@ -38,7 +39,7 @@ const Categorias = ()=>{
         getCategorias()
     }, [])
     return <div className="Categorias">
-        <div className="ctOptions">
+        {/* <div className="ctOptions">
             <div className='ctCantidad'>
                 {categoryNumber==1?`${categoryNumber} Categoría`:`${categoryNumber} Categorías` }
             </div>
@@ -48,7 +49,7 @@ const Categorias = ()=>{
                 </div>
                 <RiAddLine />
             </div>
-        </div>
+        </div> */}
         <div className="ctCategoria">
             {
                 categoryList.map(item=>{
@@ -57,7 +58,7 @@ const Categorias = ()=>{
                 })
             }
         </div>
-            <BoxDialog isOpen={rolebox} onClose={()=>{setRolebox(false)}}  children={<CategoriaScreenEditar label={''} onClose={()=>{setRolebox(false)}} getCategorias={getCategorias} uid={0} endpoint='create' />}/> 
+        <BoxDialog isOpen={rolebox} onClose={()=>{setRolebox(false)}}  children={<CategoriaScreenEditar label={''} onClose={()=>{setRolebox(false)}} getCategorias={getCategorias} uid={0} endpoint='create' />}/> 
     </div>
 }
 

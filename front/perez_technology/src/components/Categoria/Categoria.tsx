@@ -44,6 +44,7 @@ const Categoria: FC<tpCategoria  & {getCategorias: ()=>void}> = ({id, label, get
             <div className="ctDelete">
                  <RiDeleteBin5Fill onClick={DeleteCategoria} />
             </div>
+            <div className='lineDivider'> </div>
             <div className="ctTools">
                 <RiToolsFill onClick={()=>{setRoleBox(true)}} />
             </div>

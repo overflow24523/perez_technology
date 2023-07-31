@@ -13,8 +13,7 @@ const app = Router()
 
 
 app.post('/create', [security_post, 
-    check('nombre' , 'El nombre es obligatorio').not().isEmpty() ,
-    check('descripcion' , 'La descripcion es obligatoria').not().isEmpty() , validarCampos] , Create )
+    check('nombre' , 'El nombre es obligatorio').not().isEmpty()  , validarCampos] , Create )
 
 app.post('/read' , [security_post,  validarCampos], Read)
 

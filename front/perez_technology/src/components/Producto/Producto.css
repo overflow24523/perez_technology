@@ -1,18 +1,22 @@
 .Producto{
-    border: 1px solid black;
-    margin: 5px;
-    width: 100% ;
+    border: 3px solid gray;
+    margin: 15px;
     display: grid;
     grid-template-columns: 192px 1fr 1fr 96px     ;
     grid-template-rows: 1fr;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
-.Producto > div{
-    border: 1px solid black;
-}
+
 
 
 .Producto  .ctCB{
     display: flex;   
+    border-right: 3px solid gray;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Producto  .ctCB img{
@@ -27,6 +31,7 @@
 .Producto .ctNameAndCat{
     display: flex;
     flex-direction: column;
+    border-right: 3px solid gray;
 }
 
 .Producto .ctNameAndCat .ctName , .Producto .ctNameAndCat .ctCat{
@@ -37,13 +42,17 @@
     padding-right: 102px;
     font-size: 25px;
     font-weight: 700;
-    border: 1px solid black;
+}
+
+.Producto .ctNameAndCat .ctName{
+    border-bottom: 1px solid gray;
 }
 
 
 .Producto .ctPrecioAndAlmacen{
     display: flex;
     flex-direction: column ;
+    border-right: 3px solid gray;
 }
 
 .Producto .ctPrecioAndAlmacen .ctPrecio , .Producto .ctPrecioAndAlmacen .ctAlmacen{
@@ -54,14 +63,26 @@
     padding-right: 102px;
     font-size: 25px;
     font-weight: 700;
-    border: 1px solid black;
 }
 
+
+.Producto .ctPrecioAndAlmacen .ctPrecio {
+    border-bottom: 1px solid gray;
+}
 
 .Producto .ctDeleteAndTools{
     display: flex;
     flex-direction: column;
+    padding: 1px ;
 }
+
+
+.Producto .ctDeleteAndTools .lineDivider{
+    width: 100% ;
+    height: 1px;
+    background-color: gray ;
+}
+
 
 .Producto .ctDeleteAndTools .ctDelete , .Producto .ctDeleteAndTools .ctTools {
     display: flex;
@@ -69,10 +90,18 @@
     align-items: center;
     font-size: 40px;
     flex: 1;
-    border: 1px solid black;
     cursor: pointer;
+    margin: 1px;
+    border: 1px solid transparent;
 }
 
+.Producto .ctDeleteAndTools .ctDelete:hover , .Producto .ctDeleteAndTools .ctTools:hover{
+    border: 1px solid gray;
+} 
+
+.Producto .ctDeleteAndTools .ctDelete:active , .Producto .ctDeleteAndTools .ctTools:active{
+    box-shadow: gray 1px 1px 5px  inset;     
+} 
 
 .Producto .ctDeleteAndTools .ctDelete{
     color: rgb(174, 82, 82);

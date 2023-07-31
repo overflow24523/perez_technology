@@ -56,9 +56,9 @@ const Mensajes = ()=>{
     } , [])
 
     return <div className='AdminMensajes'>
-        <div className='ctProperties'>
+        {/* <div className='ctProperties'>
             Aqui van las propiedades 
-        </div>
+        </div> */}
 
         <div className='ctMensajes'>
             {

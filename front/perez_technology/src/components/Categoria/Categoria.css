@@ -1,42 +1,70 @@
 .Categoria{
     display: grid;
-    width: 100% ;
-    margin: 5px;
-    border: 1px solid black;
+    margin: 15px;
     grid-template-columns: 1fr 96px;
+    flex: 1;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    border: 3px solid gray;
 }
 
 
 .Categoria .ctName{
-    border: 1px solid black;
+    border-right: 3px solid gray;
 }
 
 .Categoria .ctOptions{
-    border: 1px solid black;
     display: flex ; 
     flex-direction: column;
+    padding: 1px;
+}
+
+.Categoria .ctOptions .lineDivider{
+    width: 100% ;
+    height: 1px;
+    background-color: gray ;
 }
 
 
 
 .Categoria .ctOptions .ctDelete{
     height: 60px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     color: rgb(185, 61, 61);
     cursor: pointer;
+    border: 1px solid transparent;
+    margin: 1px;
 }
+
+.Categoria .ctOptions .ctDelete:hover{
+    border: 1px solid gray;
+}
+
+.Categoria .ctOptions .ctDelete:active{
+    box-shadow: gray 1px 1px 5px  inset;       
+}   
 
 .Categoria .ctOptions .ctTools{
     height: 60px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     color: rgb(104, 105, 106);
     cursor: pointer;
+    border: 1px solid transparent;
+    margin: 1px ;
+}
+
+
+.Categoria .ctOptions .ctTools:hover{
+    border: 1px solid gray;
+}
+
+.Categoria .ctOptions .ctTools:active{
+    box-shadow: gray 1px 1px 5px  inset;       
 }

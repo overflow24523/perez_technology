@@ -24,6 +24,7 @@ const Mensaje: FC<tpMensaje> = ({body, deleteMensaje, img, name, phone, uid}) =>
             <div className='ctDelete'>
                 <DeleteIcon onClick={ ()=>{ deleteMensaje(uid) } } />
             </div>
+            <div className='lineDivider'></div>
             <div className='ctView'> 
                 <ToolsIcon />
             </div>

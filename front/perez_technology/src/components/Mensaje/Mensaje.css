@@ -1,20 +1,19 @@
 .Mensaje{
-    border: 1px solid black;
     display:  grid;
     grid-template-columns: 96px 1fr 1fr 96px;
-
-}
-
-.Mensaje > div{
-    border: 1px solid black;
+    margin: 15px;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    border: 3px solid gray;
 }
 
 .Mensaje .ctGmail{
     display: flex;
+    border-right: 3px solid gray;
 }
 
 .Mensaje .ctGmail > img{
-    width: 96px;
     height: 96px;
 }
 
@@ -22,23 +21,29 @@
 .Mensaje .ctNameAndPhone{
     display: flex;
     flex-direction: column;
+    border-right: 3px solid gray;
 }
 
 .Mensaje .ctNameAndPhone .ctName , .Mensaje .ctNameAndPhone .ctPhone{
     display: flex;
     align-items: center;
-    border: 1px solid black;
     flex: 1;
     font-size: 25px;
     padding-left: 5px;
 }
 
+.Mensaje .ctNameAndPhone .ctName {
+    border-bottom: 1px solid gray;
+}
 
 .Mensaje .ctMsgBody{
-    display: flex;
-    
+    display: flex;   
     align-items: top;
     padding: 5px;
+    border-right: 3px solid gray;
+    overflow-y: scroll;
+    max-height: 107px;
+
 }
 
 
@@ -46,17 +51,56 @@
 .Mensaje .ctDeleteAndView{
     display: flex;
     flex-direction: column;
+    padding: 1px ;
+}
+
+.Mensaje .ctDeleteAndView .lineDivider{
+    width: 100% ;
+    height: 1px;
+    background-color: gray  ;
 }
 
 .Mensaje .ctDeleteAndView .ctDelete{
     display: flex;
     flex: 1;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
-    
     cursor: pointer;
+    margin: 1px;    
+    border-radius: 5px ;
+    border: 1px solid transparent;
 }
+
+.Mensaje .ctDeleteAndView .ctDelete:hover{
+    border: 1px solid gray;
+}
+
+
+.Mensaje .ctDeleteAndView .ctDelete:active{
+    box-shadow: gray 1px 1px 5px  inset;    
+}
+
+.Mensaje .ctDeleteAndView .ctView{
+    display: flex;
+    flex: 1 ; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px ;
+    margin: 1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.Mensaje .ctDeleteAndView .ctView:hover{
+    border: 1px solid gray;
+}
+
+
+.Mensaje .ctDeleteAndView .ctView:active{
+    box-shadow: gray 1px 1px 5px  inset;       
+}
+
+
 
 .Mensaje .ctDeleteAndView .ctDelete > * {
     width: 48px;
@@ -64,14 +108,7 @@
     color: rgb(214, 85, 85);
 }
 
-.Mensaje .ctDeleteAndView .ctView{
-    display: flex;
-    flex: 1 ; 
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+
 
 
 .Mensaje .ctDeleteAndView .ctView > * {

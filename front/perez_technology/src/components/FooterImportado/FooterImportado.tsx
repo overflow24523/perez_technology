@@ -86,7 +86,7 @@ const FooterImportado = () => {
                   placeholder="micorreo#gmail.com"
                 />
                 <span className="input-group-btn">
-                  <BtEnviar text= {'subscrito'}  />
+                  <BtEnviar text= {'Enviar'}  />
                 </span>
               </div>
               {/* /input-group */}

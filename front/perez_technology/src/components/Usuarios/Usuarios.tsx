@@ -103,14 +103,14 @@ const Usuarios = () => {
 
 
     return <div className="ctUsuarios">
-        <div className='ctProperties'>
+        {/* <div className='ctProperties'>
             Aquí las estadísticas 
-        </div>
+        </div> */}
         <div className='ctUsers'>
             {dataUsers.map(item => { 
                 const { id, phone, nombre,  rol , label}  = item
                 return <Usuario key={id} uid={id} name={nombre} phone={phone} role={label} img={rol==1?'./src/assets/icons/userIcon3.jpg':'./src/assets/icons/userIcon2.png'}  deleteUser={deleteUser} showToolbox= {showToolbox} />
-            })}            
+            })}  
         </div>
 
         <BoxDialog  isOpen={rolebox} onClose={()=>{ setRolebox(false) }}  children={cuerpoDialogo} />

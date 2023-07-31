@@ -27,6 +27,7 @@ const Usuario: FC<tpUsuario> = ({name, phone, role , img , uid , deleteUser, sho
             }} >
                 <DeleteIcon  />
             </div>
+            <div className='lineDivider'></div>
             <div className='ctTools'>
                 < ToolsIcon onClick={()=>{
                     showToolbox(uid)

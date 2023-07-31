@@ -85,14 +85,14 @@ const Productos = ()=>{
     },[])
 
     return <div className="Productos">
-        <div className='ctEstadisticas'>
+        {/* <div className='ctEstadisticas'>
             <div className='ctCantidad'>
                 Cantidad: {`${productNumber} producto${productNumber == 1?'':'s' }`}            
             </div>
             <div className='ctAddProduct' onClick={()=>{setRoleBox(true)}}>
                   <div>Agregar Producto</div> <RiAddLine/>
             </div>
-        </div>
+        </div> */}
 
         <div className='ctProductos'>
             {

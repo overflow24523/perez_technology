@@ -1,0 +1,60 @@
+.ProveedorScreenEditar{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+}
+
+
+.ProveedorScreenEditar .formEditProveedor{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ProveedorScreenEditar .formEditProveedor .frow{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+}
+
+
+.ProveedorScreenEditar .formEditProveedor .frow .fcolumn {
+    display: flex;
+    flex: 1; 
+    /* border: 1px solid black; */
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ProveedorScreenEditar .formEditProveedor .frow .fcolumn input{
+    display: flex;
+    width: 100%;
+}
+
+.ProveedorScreenEditar .formEditProveedor .frow .fcolumn.ctBtEditar{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+.ProveedorScreenEditar .formEditProveedor .frow .fcolumn.ctBtEditar .btEditar{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    cursor: pointer ; 
+}
+
+
+.ProveedorScreenEditar .formEditProveedor .frow .fcolumn.ctBtEditar .btEditar:hover{
+    box-shadow: black 1px 1px 3px;
+}
+
+.ProveedorScreenEditar .formEditProveedor .frow .fcolumn.ctBtEditar .btEditar:active{
+    box-shadow: black 1px 1px 3px inset;
+}

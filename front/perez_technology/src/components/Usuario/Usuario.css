@@ -1,45 +1,50 @@
 .Usuario{
-    border: 1px solid black;
-    margin: 5px;
+    margin: 15px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 96px 1fr 1fr 96px ;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    border: 3px solid gray;
 }
 
-.Usuario > div{
-    border: 1px solid black;
-}
 
 
 .Usuario .ctPicture{
     display: flex;
-    height: 100%;
     color: white; 
     justify-content: center;
     align-items: center;
+    border-right: 3px solid gray ;
 }
 
 
 .Usuario .ctPicture img{
     display: flex;
     flex: 1;
-    width: 96px;
     height: 96px;
+    padding: 5px;
 }
 .Usuario .ctNameAndPhone{
     display: flex;
     flex-direction: column;
+    border-right: 3px solid gray ;
+    border-left: 3px solid gray ;
 }
 
 
 
 .Usuario .ctNameAndPhone .ctName, .Usuario .ctNameAndPhone .ctPhone{
-    border: 1px solid black ;
     display: flex;
     flex: 1;
     align-items: center;
     padding-left: 5px;
     font-size: 25px;
+}
+
+.Usuario .ctNameAndPhone .ctName{
+    border-bottom: 1px solid gray ;
 }
 
 .Usuario .ctRole{
@@ -49,22 +54,59 @@
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 700;
+    border-right: 3px solid gray ;
 }
 
 
 .Usuario .ctDeleteAndTools{
     display: flex;
     flex-direction: column;
+    padding: 1px;
 }
+
+.Usuario .ctDeleteAndTools .lineDivider{
+    width: 100% ;
+    height: 1px;
+    background-color: gray  ;
+}
+
 
 .Usuario .ctDeleteAndTools .ctDelete{
     display: flex;
     flex: 1;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
-    
     cursor: pointer;
+    margin: 1px;    
+    border-radius: 5px ;
+    border: 1px solid transparent;
+}
+
+.Usuario .ctDeleteAndTools .ctDelete:hover {
+    border: 1px solid gray;
+}
+
+.Usuario .ctDeleteAndTools .ctDelete:active{
+    box-shadow: gray 1px 1px 5px  inset;       
+}
+
+.Usuario .ctDeleteAndTools .ctTools{
+    display: flex;
+    flex: 1 ; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px ;
+    margin: 1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.Usuario .ctDeleteAndTools .ctTools:hover {
+    border: 1px solid gray;
+}
+
+.Usuario .ctDeleteAndTools .ctTools:active{
+    box-shadow: gray 1px 1px 5px  inset;       
 }
 
 .Usuario .ctDeleteAndTools .ctDelete > * {
@@ -73,14 +115,6 @@
     color: rgb(214, 85, 85);
 }
 
-.Usuario .ctDeleteAndTools .ctTools{
-    display: flex;
-    flex: 1 ; 
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
 
 .Usuario .ctDeleteAndTools .ctTools > * {

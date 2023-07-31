@@ -1,9 +1,9 @@
 .Productos{
     padding: 20px;
-    border: 1px solid black;
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -43,6 +43,12 @@
 
 .Productos .ctProductos{
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
+    background: -moz-linear-gradient(rgb(117, 117, 227), rgb(28, 28, 73));
+    background: -webkit-linear-gradient(rgb(117, 117, 227), rgb(28, 28, 73));
+    background: -o-linear-gradient(rgb(117, 117, 227), rgb(28, 28, 73)) ;
+    border-radius: 7px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    height: 100% ;
+    overflow-y: scroll;
 }

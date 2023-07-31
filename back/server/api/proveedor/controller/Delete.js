@@ -12,7 +12,7 @@ const Delete = async (req = request, res =response) => {
         const tempProveedor = await Proveedor.findByPk(target)
         if(!tempProveedor) return res.status(200).json({status: 400, msg: 'Debe proporcionar un proveedor válido' })
 
-        tempProveedor.destroy()
+        await tempProveedor.destroy()
 
         res.status(200).json({status: 200, msg: 'Proveedor eliminado con éxito'})
 
