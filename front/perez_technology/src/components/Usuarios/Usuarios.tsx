@@ -5,6 +5,7 @@ import Usuario from '../Usuario/Usuario'
 import { getToken } from '../../helpers/HandlerToken'
 // import Usuario from '../Usuario/Usuario';
 import BoxDialog from '../BoxDialog/BoxDialog';
+import { Ri24HoursLine, RiArrowGoBackFill, RiUserFill } from 'react-icons/ri';
 const Usuarios = () => {
 
     const [dataUsers, setDataUsers ] = useState([])
@@ -103,13 +104,33 @@ const Usuarios = () => {
 
 
     return <div className="ctUsuarios">
-        {/* <div className='ctProperties'>
-            Aquí las estadísticas 
-        </div> */}
+        <div className='ctProperties'>
+            <div className='ctNumber'>
+                {`${dataUsers.length} ${dataUsers.length==1?' Usuario':'Usuarios'}`}
+            </div>
+            <div className='ctUpdate' onClick={loadUsers}>
+                <Ri24HoursLine />
+                <div className='ctLabel'>
+                    Actializar
+                </div>
+            </div>
+        </div>
         <div className='ctUsers'>
             {dataUsers.map(item => { 
                 const { id, phone, nombre,  rol , label}  = item
-                return <Usuario key={id} uid={id} name={nombre} phone={phone} role={label} img={rol==1?'./src/assets/icons/userIcon3.jpg':'./src/assets/icons/userIcon2.png'}  deleteUser={deleteUser} showToolbox= {showToolbox} />
+                let img = ''
+                switch(rol){
+                    case 1:
+                        img = './src/assets/icons/userIcon3.jpg'
+                        break;
+                    case 2:
+                        img = './src/assets/icons/userIcon2.png'
+                        break;
+                    case 3:
+                        img= './src/assets/icons/userIcon.png'
+                        break;
+                }
+                return <Usuario key={id} uid={id} name={nombre} phone={phone} role={label} img={img}  deleteUser={deleteUser} showToolbox= {showToolbox} />
             })}  
         </div>
 

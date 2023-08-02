@@ -3,7 +3,7 @@ import Producto from '../Producto/Producto';
 import {  useEffect, useState } from 'react';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
-import { RiAddLine } from 'react-icons/ri'
+import { Ri24HoursLine, RiAddLine } from 'react-icons/ri'
 import BoxDialog from '../BoxDialog/BoxDialog';
 import ProductAddScreen from '../modals/Producto/ProductAddScreen/ProductAddScreen';
 
@@ -85,14 +85,20 @@ const Productos = ()=>{
     },[])
 
     return <div className="Productos">
-        {/* <div className='ctEstadisticas'>
-            <div className='ctCantidad'>
-                Cantidad: {`${productNumber} producto${productNumber == 1?'':'s' }`}            
+        <div className='ctEstadisticas'>
+            <div className='ctNumber'>
+                {`${productNumber} producto${productNumber == 1?'':'s' }`}            
             </div>
             <div className='ctAddProduct' onClick={()=>{setRoleBox(true)}}>
                   <div>Agregar Producto</div> <RiAddLine/>
             </div>
-        </div> */}
+            <div className='ctUpdate' onClick={getProductos}>
+                <Ri24HoursLine />
+                <div className='ctLabel'>
+                    Actializar
+                </div>
+            </div>
+        </div>
 
         <div className='ctProductos'>
             {

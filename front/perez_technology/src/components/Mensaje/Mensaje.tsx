@@ -21,8 +21,8 @@ const Mensaje: FC<tpMensaje> = ({body, deleteMensaje, img, name, phone, uid}) =>
             {body}
         </div>
         <div className='ctDeleteAndView'>
-            <div className='ctDelete'>
-                <DeleteIcon onClick={ ()=>{ deleteMensaje(uid) } } />
+            <div className='ctDelete'  onClick={ ()=>{ deleteMensaje(uid) } } >
+                <DeleteIcon  />
             </div>
             <div className='lineDivider'></div>
             <div className='ctView'> 

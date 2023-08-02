@@ -3,7 +3,7 @@ import Proveedor from '../Proveedor/Proveedor';
 import { useEffect, useState } from 'react';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
-import { RiAddLine } from 'react-icons/ri';
+import { Ri24HoursLine, RiAddLine } from 'react-icons/ri';
 import BoxDialog from '../BoxDialog/BoxDialog';
 import ProveedorScreenEditar from '../modals/Proveedor/ProveedorScreenEditar/ProveedorScreenEditar';
 const Proveedores  = ()=>{
@@ -41,8 +41,8 @@ const Proveedores  = ()=>{
 
 
     return <div className="Proveedores">
-        {/* <div className="ctOptions">
-            <div className='ctCantidad'>
+        <div className="ctOptions">
+            <div className='ctNumber'>
                 {proveedorNumber==1?`${proveedorNumber} Proveedor`:`${proveedorNumber} Proveedores` }
             </div>
             <div className='ctAgregar' onClick={()=>{setRolebox(true)}}>
@@ -51,7 +51,13 @@ const Proveedores  = ()=>{
                 </div>
                 <RiAddLine />
             </div>
-        </div> */}
+            <div className='ctUpdate' onClick={getProveedores}>
+                <Ri24HoursLine />
+                <div className='ctLabel'>
+                    Actializar
+                </div>
+            </div>
+        </div>
         <div className='ctProveedores'>
             {
                 proveedorList.map(item =>{

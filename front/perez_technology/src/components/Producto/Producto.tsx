@@ -99,12 +99,12 @@ const Producto: FC<tpProducto & {getProducto: ()=>void, categoryList:[] , provee
                     </div>
                 </div>
                 <div className='ctDeleteAndTools'>
-                    <div className='ctDelete'>
-                        <DeleteIcon onClick={()=>{deleteProducto(uid)}} />
+                    <div className='ctDelete' onClick={()=>{deleteProducto(uid)}}>
+                        <DeleteIcon  />
                     </div>
                     <div className='lineDivider'> </div>
-                    <div className='ctTools'>
-                        <ToolsIcon onClick={()=>{mostrarToolBox()}} />
+                    <div className='ctTools' onClick={()=>{mostrarToolBox()}}>
+                        <ToolsIcon  />
                     </div>
                 </div>
 

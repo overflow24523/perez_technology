@@ -34,7 +34,22 @@ const LoginForm: React.FC<actionable & { mPointH: (arg: number) => void }> = ({ 
       })
         .then((res) => res.json())
         .then((arg) => {
-          mostrarAlerta(arg);
+            if(arg.status==200){
+                const {user} = arg
+                switch(user.rol){
+                    case 1:
+                        mPointH(0)
+                    break; 
+                    case 2:
+                        mPointH(2)
+                    break;
+                    case 3:
+                        mPointH(3)
+                    break;  
+                }
+
+            }
+            mostrarAlerta(arg);
         })
         .catch((err) => {
           mostrarAlerta({ msg: 'No disponible', status: 500 });

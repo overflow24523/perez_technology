@@ -6,28 +6,73 @@
     font-size: 25px;
 }
 
-
-.Proveedores .ctOptions{
+.Proveedores > .ctOptions{
+    background-color: rgb(117, 117, 227);
+    border-radius: 7px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    height: auto;
+    margin-bottom: 10px ;   
+    padding: 20px;
     display: flex;
-    border: 1px solid black;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
 .Proveedores > .ctOptions > div{
-    border: 1px solid black;
-    flex: 1;
-    display: flex   ;
+    width: 25%;
+    /* border: 1px solid black ; */
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.Proveedores > .ctOptions .ctNumber{
+    border-radius: 5px;
+    background-color: rgb(21, 163, 116);
+    width: 200px;
+    height: 100px;
+    color: whitesmoke;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    cursor: pointer;
 }
 
 
+
 .Proveedores .ctOptions .ctAgregar{
-
+    border-radius: 5px;
+    background-color: rgb(192, 143, 52);
+    min-width: 200px;
+    height: 100px;
+    color: whitesmoke;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
     cursor: pointer;
+}
 
+
+
+.Proveedores .ctOptions  .ctUpdate{
+    border-radius: 5px;
+    background-color: rgb(21, 149, 163);
+    width: 200px;
+    height: 100px;
+    color: whitesmoke;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    cursor: pointer;
+}
+
+
+.Proveedores .ctOptions  .ctUpdate .ctLabel{
+    margin-left: 10px;
+}
+
+
+.Proveedores .ctOptions .ctAgregar:hover, .Proveedores .ctOptions  .ctUpdate:hover{
+    box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.Proveedores .ctOptions .ctAgregar:active, .Proveedores .ctOptions  .ctUpdate:active{
+    box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288) inset;
 }
 
 

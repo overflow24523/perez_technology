@@ -3,6 +3,7 @@ import Mensaje from '../Mensaje/Mensaje';
 import { useEffect, useState } from 'react';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
+import { Ri24HoursLine } from 'react-icons/ri';
 
 const Mensajes = ()=>{
 
@@ -56,9 +57,19 @@ const Mensajes = ()=>{
     } , [])
 
     return <div className='AdminMensajes'>
-        {/* <div className='ctProperties'>
-            Aqui van las propiedades 
-        </div> */}
+
+
+        <div className='ctProperties'>
+            <div className='ctNumber'>
+                {`${dataMesage.length} ${dataMesage.length==1?'Mensaje':'Mensajes'}`}
+            </div>
+            <div className='ctUpdate' onClick={loadMensajes}>
+                <Ri24HoursLine />
+                <div className='ctLabel'>
+                    Actualizar
+                </div>
+            </div>
+        </div>
 
         <div className='ctMensajes'>
             {

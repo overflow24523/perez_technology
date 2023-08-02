@@ -53,7 +53,7 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void ,jostick: 
 
             <div className='ctName'>
                 <div>
-                    Deivis
+                    Administrador
                 </div>
             </div>
         </div>

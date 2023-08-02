@@ -3,7 +3,7 @@ import Categoria from '../Categoria/Categoria';
 import { useEffect, useState } from 'react';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
-import { RiAddLine } from 'react-icons/ri';
+import { Ri24HoursLine, RiAddLine } from 'react-icons/ri';
 import BoxDialog from '../BoxDialog/BoxDialog';
 import CategoriaScreenEditar from '../modals/Categoria/CategoriaScreenEditar/CategoriaScreenEditar';
 const Categorias = ()=>{
@@ -39,17 +39,25 @@ const Categorias = ()=>{
         getCategorias()
     }, [])
     return <div className="Categorias">
-        {/* <div className="ctOptions">
-            <div className='ctCantidad'>
+        <div className="ctOptions">
+            <div className='ctNumber'>
                 {categoryNumber==1?`${categoryNumber} Categoría`:`${categoryNumber} Categorías` }
             </div>
+            
             <div className='ctAgregar' onClick={()=>{setRolebox(true)}}>
                 <div>
                     Agregar Categoría
                 </div>
                 <RiAddLine />
             </div>
-        </div> */}
+
+            <div className='ctUpdate' onClick={getCategorias}>
+                <Ri24HoursLine />
+                <div className='ctLabel'>
+                    Actializar
+                </div>
+            </div>
+        </div>
         <div className="ctCategoria">
             {
                 categoryList.map(item=>{

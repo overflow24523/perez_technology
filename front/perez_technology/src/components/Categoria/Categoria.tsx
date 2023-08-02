@@ -41,12 +41,12 @@ const Categoria: FC<tpCategoria  & {getCategorias: ()=>void}> = ({id, label, get
             {label}
         </div>
         <div className="ctOptions">
-            <div className="ctDelete">
-                 <RiDeleteBin5Fill onClick={DeleteCategoria} />
+            <div className="ctDelete" onClick={DeleteCategoria}>
+                 <RiDeleteBin5Fill  />
             </div>
             <div className='lineDivider'> </div>
-            <div className="ctTools">
-                <RiToolsFill onClick={()=>{setRoleBox(true)}} />
+            <div className="ctTools" onClick={()=>{setRoleBox(true)}} >
+                <RiToolsFill />
             </div>
         </div>
         <BoxDialog isOpen={roleBox} onClose={()=>{setRoleBox(false)}}  children={<CategoriaScreenEditar label={label} onClose={()=>{setRoleBox(false)}} getCategorias={getCategorias} uid={id} endpoint='update' />} />

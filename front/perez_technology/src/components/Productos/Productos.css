@@ -9,37 +9,69 @@
 
 
 .Productos .ctEstadisticas{
+    background-color: rgb(117, 117, 227);
+    border-radius: 7px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    height: auto;
+    margin-bottom: 10px ;   
+    padding: 20px;
     display: flex;
-    border: 1px solid black;
+    justify-content: space-between;
 }
 
 
 .Productos .ctEstadisticas > div{
-    flex: 1;
-    border: 1px solid black;
-
-}
-
-
-.Productos .ctEstadisticas .ctCantidad{
+    width: 25%;
+    /* border: 1px solid black ; */
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 20px;
+    align-items: center;
+    font-size: 25px;
 }
 
-.Productos .ctEstadisticas .ctAddProduct{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-}
 
-.Productos .ctEstadisticas .ctAddProduct:hover{
-    border: 1px solid black ;
+.Productos .ctEstadisticas .ctNumber{
+    border-radius: 5px;
+    background-color: rgb(21, 163, 116);
+    width: 200px;
+    height: 100px;
+    color: whitesmoke;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
     cursor: pointer;
 }
 
+.Productos .ctEstadisticas .ctAddProduct{
+    border-radius: 5px;
+    background-color: rgb(192, 143, 52);
+    min-width: 200px;
+    height: 100px;
+    color: whitesmoke;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    cursor: pointer;
+}
+
+.Productos .ctEstadisticas .ctUpdate{
+    border-radius: 5px;
+    background-color: rgb(21, 149, 163);
+    width: 200px;
+    height: 100px;
+    color: whitesmoke;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    cursor: pointer;
+}
+ 
+.Productos .ctEstadisticas .ctUpdate .ctLabel{
+    margin-left: 10px;
+}
+
+.Productos .ctEstadisticas .ctAddProduct:hover , .Productos .ctEstadisticas .ctUpdate:hover{
+      box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+
+.Productos .ctEstadisticas .ctAddProduct:active , .Productos .ctEstadisticas .ctUpdate:active{
+      box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288) inset;
+}
 
 .Productos .ctProductos{
     display: flex;
