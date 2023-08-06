@@ -3,6 +3,7 @@ import Menu from '../Menu/Menu';
 import { FC, useState, useEffect , useRef} from 'react';
 
 import './Navbar.css'; 
+import Person from '../../../Person/Person';
 // import Button from '../../../Button/Button';
 
 
@@ -52,9 +53,7 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void ,jostick: 
             <Menu open={isOpen} closeHandler = {triggerMenu} jostick={ jostick }/>
 
             <div className='ctName'>
-                <div>
-                    Administrador
-                </div>
+                <Person />
             </div>
         </div>
     )

@@ -1,7 +1,8 @@
-import React, {  useState } from "react";
+import React, {  useContext, useState } from "react";
 import { RiUserFill, RiLockPasswordFill } from "react-icons/ri";
 import { actionable } from "../../Types/types";
 import { mostrarAlerta } from "../../helpers/MostrarAlerta";
+import { GlobalContext } from "../GlobalContext/GlobalContext";
 
 const LoginForm: React.FC<actionable & { mPointH: (arg: number) => void }> = ({ action, mPointH }) => {
     const [email, setEmail] = useState("");
@@ -17,6 +18,8 @@ const LoginForm: React.FC<actionable & { mPointH: (arg: number) => void }> = ({ 
     ) => {
         setPassword(event.target.value);
     };
+
+    const {setLogin} = useContext(GlobalContext)
 
     
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -35,6 +38,7 @@ const LoginForm: React.FC<actionable & { mPointH: (arg: number) => void }> = ({ 
         .then((res) => res.json())
         .then((arg) => {
             if(arg.status==200){
+                setLogin(true)
                 const {user} = arg
                 switch(user.rol){
                     case 1:

@@ -1,3 +1,10 @@
+
+type GlobalContextType = {
+    login: boolean,
+    setLogin: (arg: boolean)=>void
+}
+
+
 type actionable = {
     action: (arg: string) => void;
 }
@@ -113,4 +120,4 @@ type tpProductAddScreen = {
 
 
 
-export type { actionable, MenuElement, Botton, tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse, tpUsuario, DialogProps, tpMensaje, tpProducto,tpProductModal , tpWindowBorderTop, tpProductAddScreen, tpProveedor , tpCategoria}
+export type { actionable, MenuElement, Botton, tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse, tpUsuario, DialogProps, tpMensaje, tpProducto,tpProductModal , tpWindowBorderTop, tpProductAddScreen, tpProveedor , tpCategoria, GlobalContextType}

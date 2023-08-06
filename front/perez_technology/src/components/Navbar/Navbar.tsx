@@ -1,9 +1,11 @@
 import Brand from '../Brand/Brand';
 import Menu from '../Menu/Menu';
-import { FC, useState, useEffect , useRef} from 'react';
+import { FC, useState, useEffect , useRef, useContext} from 'react';
 
 import './Navbar.css'; 
 import Button from '../Button/Button';
+import Person from '../Person/Person';
+import { GlobalContext } from '../GlobalContext/GlobalContext';
 
 
 const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void }> =({upOrDown, mPointH})=>{
@@ -40,6 +42,8 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void }> =({upOr
         return () => observer.disconnect();
     }, []);
 
+    const {login} = useContext(GlobalContext)
+
 
     return (
         <div className={`Nabvar ${upOrDown?'active':''} ${isVisible?'visible':''}`} ref={ref} >
@@ -48,9 +52,13 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void }> =({upOr
                 <img src="./src/assets/icons/btnMenu.png" alt=""  width={32} height={32}/>
             </div>
             <Menu open={isOpen} closeHandler = {triggerMenu} />
+
             <div className='CtRecervar' data-aos="fade-left">
-                <Button texto={"ENTRAR"}  clase={"btnRecervar"}  mPointH = {(arg: number)=>{mPointH(arg)}} />
+                {
+                    login?<Person />:<Button texto={"ENTRAR"}  clase={"btnRecervar"}  mPointH = {(arg: number)=>{mPointH(arg)}} />
+                }
             </div>  
+
         </div>
     )
 }

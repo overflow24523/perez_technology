@@ -4,6 +4,7 @@ import { FC, useState, useEffect , useRef} from 'react';
 
 import './Navbar.css'; 
 // import Button from '../../../Button/Button';
+import Person from '../../../Person/Person';
 
 const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void ,jostick: (arg:number)=>void }> =({upOrDown, mPointH, jostick})=>{
 
@@ -50,9 +51,7 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void ,jostick: 
             <Menu open={isOpen} closeHandler = {triggerMenu} jostick={ jostick }/>
 
             <div className='ctName'>
-                <div>
-                    Almacenero
-                </div>
+                <Person />
             </div>
         </div>
     )

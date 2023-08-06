@@ -1,0 +1,72 @@
+.Person{
+    display: flex;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Person > .ctPicture{
+    flex: 1;
+    display: flex;
+}
+
+
+.Person > .ctPicture >  img{
+    display: flex;
+    flex: 1;
+    max-width: 64px;
+    cursor: pointer;
+}
+
+.Person > .ctPicture >  img:hover{
+    filter: drop-shadow(-1px 1px 5px rgb(72, 68, 68));
+}
+
+
+.Person > .ctPicture >  img:active{
+    filter: drop-shadow(-1px 1px 5px rgb(209, 191, 191) );
+}
+
+
+.Person .ctTools{
+    /* border: 1px solid black; */
+    position: absolute;
+    margin-top: 64px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.Person .ctTools.hide{
+    display: none;
+}
+
+
+.Person .ctTools .marco{
+    /* border: 1px solid black;     */
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.788);
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.Person .ctTools .marco .toolItem{
+    border: 2px solid transparent;
+    margin: 1px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.Person .ctTools .marco .toolItem:hover{
+    border: 2px solid rgb(168, 163, 163) ;
+}
+
+
+.Person .ctTools .marco .toolItem:active{
+    border: 2px solid rgb(207, 204, 204);
+}
+
+
