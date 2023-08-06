@@ -1,4 +1,4 @@
-.ContactForm.container {
+  .ContactForm.container {
     width: 350px;
     height: 500px;
     display: flex;
@@ -7,7 +7,9 @@
     position: relative;
     border-radius: 3px;
     border: 1px solid #396afc;
-    background: linear-gradient(to right, #005c97, #363795);
+    background:  #577ecb;
+    background: -webkit-linear-gradient(317deg, #3ab049 0%, #577ecb 100%);
+    background: linear-gradient(317deg, #3ab049 0%, #577ecb 30%);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-right: 0px;
     margin-left: 0px;
