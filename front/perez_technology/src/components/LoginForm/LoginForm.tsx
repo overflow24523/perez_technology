@@ -3,6 +3,7 @@ import { RiUserFill, RiLockPasswordFill } from "react-icons/ri";
 import { actionable } from "../../Types/types";
 import { mostrarAlerta } from "../../helpers/MostrarAlerta";
 import { GlobalContext } from "../GlobalContext/GlobalContext";
+import { saveToken } from "../../helpers/HandlerToken";
 
 const LoginForm: React.FC<actionable & { mPointH: (arg: number) => void }> = ({ action, mPointH }) => {
     const [email, setEmail] = useState("");
@@ -39,6 +40,7 @@ const LoginForm: React.FC<actionable & { mPointH: (arg: number) => void }> = ({ 
         .then((arg) => {
             if(arg.status==200){
                 setLogin(true)
+                saveToken(arg.user.jwt)
                 const {user} = arg
                 switch(user.rol){
                     case 1:
