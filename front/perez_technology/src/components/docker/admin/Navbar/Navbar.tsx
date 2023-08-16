@@ -53,7 +53,7 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void ,jostick: 
             <Menu open={isOpen} closeHandler = {triggerMenu} jostick={ jostick }/>
 
             <div className='ctName'>
-                <Person />
+            <Person mPointH={mPointH} />
             </div>
         </div>
     )

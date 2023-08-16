@@ -1,5 +1,4 @@
 export const getToken = ()=>{
-        console.log(window.localStorage.getItem('perez_t'))
         return window.localStorage.getItem('perez_t')
 }       
 export const saveToken  = (arg: string)=>{

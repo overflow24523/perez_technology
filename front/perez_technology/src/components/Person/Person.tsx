@@ -1,13 +1,22 @@
-import { useState } from 'react'
+import { FC, useContext, useState } from 'react'
 import './Person.css'
+import { deleteToken } from '../../helpers/HandlerToken'
+import { GlobalContext } from '../GlobalContext/GlobalContext'
 
-const Person = ()=>{
+const Person: FC<{ mPointH: (arg: number) => void}> = ({mPointH})=>{
 
     const [hide , setHide]  = useState<boolean>(true)
+    const {setLogin}  = useContext(GlobalContext)
 
     
     const OpenCloseTool = ()=>{
         setHide(!hide)
+    }
+
+    const cerrarSession = () => {
+            deleteToken()
+            mPointH(1)
+            setLogin(false)
     }
 
     return <div className="Person" onMouseLeave={()=>{setHide(true)}}>
@@ -19,7 +28,7 @@ const Person = ()=>{
                         <div className='toolItem'>
                             Opciones
                         </div>
-                        <div className='toolItem'>
+                        <div className='toolItem' onClick={cerrarSession}>
                             Salir
                         </div>
                     </div>

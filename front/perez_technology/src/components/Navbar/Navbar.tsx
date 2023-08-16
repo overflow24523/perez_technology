@@ -55,7 +55,7 @@ const Navbar: FC<{upOrDown: boolean ,  mPointH: (arg: number) => void }> =({upOr
 
             <div className='CtRecervar' data-aos="fade-left">
                 {
-                    login?<Person />:<Button texto={"ENTRAR"}  clase={"btnRecervar"}  mPointH = {(arg: number)=>{mPointH(arg)}} />
+                    login?<Person mPointH={mPointH} />:<Button texto={"ENTRAR"}  clase={"btnRecervar"}  mPointH = {(arg: number)=>{mPointH(arg)}} />
                 }
             </div>  
 
