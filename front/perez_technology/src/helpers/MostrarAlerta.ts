@@ -17,9 +17,6 @@ export const mostrarAlerta = (arg: dtmResponse , toast = true) => {
       }, 2010 *  Number(window.localStorage.getItem('alertQueue')))
       window.localStorage.setItem('alertQueue' , String(Number(window.localStorage.getItem('alertQueue'))+1))
   }
-
-  
-  
 }
 
 
@@ -53,5 +50,4 @@ const lanzarAlerta = (arg: dtmResponse , toast = true) => {
     position: 'top-right' 
   });
 };
-
 

@@ -6,6 +6,7 @@ import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
 import BoxDialog from '../BoxDialog/BoxDialog';
 import CategoriaScreenEditar from '../modals/Categoria/CategoriaScreenEditar/CategoriaScreenEditar';
+import { P2PSystem } from '../../helpers/P2PSystem';
 const Categoria: FC<tpCategoria  & {getCategorias: ()=>void}> = ({id, label, getCategorias}) => {
 
 
@@ -14,7 +15,7 @@ const Categoria: FC<tpCategoria  & {getCategorias: ()=>void}> = ({id, label, get
 
     const DeleteCategoria = ()=>{
         const bag = new FormData()
-        bag.set('token' , getToken())
+        bag.set('token' , String(getToken()))
         bag.set('target', String(id))
 
         fetch('http://localhost:8081/api/categoria/delete', {
@@ -41,7 +42,9 @@ const Categoria: FC<tpCategoria  & {getCategorias: ()=>void}> = ({id, label, get
             {label}
         </div>
         <div className="ctOptions">
-            <div className="ctDelete" onClick={DeleteCategoria}>
+            <div className="ctDelete" onClick={()=>{
+                P2PSystem(`Desea eliminar la categoría ${label}`, DeleteCategoria)
+            }}>
                  <RiDeleteBin5Fill  />
             </div>
             <div className='lineDivider'> </div>

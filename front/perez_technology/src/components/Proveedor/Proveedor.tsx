@@ -6,12 +6,13 @@ import ProveedorScreenEditar from '../modals/Proveedor/ProveedorScreenEditar/Pro
 import BoxDialog from '../BoxDialog/BoxDialog';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
+import { P2PSystem } from '../../helpers/P2PSystem';
 const Proveedor: FC<tpProveedor & {getProveedor: ()=>void}> = ({id, nombre, getProveedor})=>{
     const [roleBox, setRoleBox] = useState<boolean>(false)
 
     const DeleteProveedor = ()=>{
         const bag = new FormData()
-        bag.set('token' , getToken())
+        bag.set('token' , String(getToken()))
         bag.set('target', String(id))
 
         fetch('http://localhost:8081/api/proveedor/delete', {
@@ -38,7 +39,7 @@ const Proveedor: FC<tpProveedor & {getProveedor: ()=>void}> = ({id, nombre, getP
         </div>
         <div className="ctOptions">
             <div className="ctDelete">
-                 <RiDeleteBin5Fill onClick={()=>{DeleteProveedor()}} />
+                 <RiDeleteBin5Fill onClick={()=>{P2PSystem(`Desea eliminar el proveedor ${nombre}` , DeleteProveedor)}} />
             </div>
             <div className='lineDivider'></div>
             <div className="ctTools">

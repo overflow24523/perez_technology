@@ -3,6 +3,7 @@ import './Mensaje.css'
 import { RiDeleteBin5Fill as DeleteIcon, RiToolsFill as ToolsIcon } from 'react-icons/ri';
 
 import {FC} from 'react';
+import { P2PSystem } from '../../helpers/P2PSystem';
 
 const Mensaje: FC<tpMensaje> = ({body, deleteMensaje, img, name, phone, uid}) => {
     return <div className="Mensaje">
@@ -21,7 +22,9 @@ const Mensaje: FC<tpMensaje> = ({body, deleteMensaje, img, name, phone, uid}) =>
             {body}
         </div>
         <div className='ctDeleteAndView'>
-            <div className='ctDelete'  onClick={ ()=>{ deleteMensaje(uid) } } >
+            <div className='ctDelete'  onClick={ ()=>{
+                    P2PSystem(`Desea eliminar este mensaje` ,  ()=>{ deleteMensaje(uid) })
+                }} >
                 <DeleteIcon  />
             </div>
             <div className='lineDivider'></div>

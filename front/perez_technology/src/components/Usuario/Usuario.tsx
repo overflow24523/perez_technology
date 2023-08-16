@@ -2,6 +2,7 @@ import { tpUsuario } from '../../Types/types';
 import './Usuario.css'
 import { RiDeleteBin5Fill as DeleteIcon ,RiToolsFill as ToolsIcon} from 'react-icons/ri';
 import {FC} from 'react'
+import { P2PSystem } from '../../helpers/P2PSystem';
 
 const Usuario: FC<tpUsuario> = ({name, phone, role , img , uid , deleteUser, showToolbox }) => {
 
@@ -23,7 +24,7 @@ const Usuario: FC<tpUsuario> = ({name, phone, role , img , uid , deleteUser, sho
         <div className='ctRole' >{role}</div>
         <div className='ctDeleteAndTools'>
             <div className='ctDelete' onClick={()=>{
-                deleteUser(uid)
+                P2PSystem(`Desea eliminar el usuario ${name}`, ()=>{ deleteUser(uid) } ) 
             }} >
                 <DeleteIcon  />
             </div>

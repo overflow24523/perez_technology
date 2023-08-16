@@ -8,6 +8,7 @@ import ProductEditScreen from '../modals/Producto/ProductEditScreen/ProductEditS
 import ProductViewMoreScreen from '../modals/Producto/ProductViewMoreScreen/ProductViewMoreScreen';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
+import { P2PSystem } from '../../helpers/P2PSystem';
 
 
 
@@ -37,17 +38,11 @@ const Producto: FC<tpProducto & {getProducto: ()=>void, categoryList:[] , provee
         }
     }
 
-    
 
     useEffect( ()=>{
-
         changeScreen(handlerScreen)
-
     }, [handlerScreen])
     
-
-    
-
     const mostrarToolBox = ()=>{
         setRolebox(true)    
     }
@@ -55,7 +50,7 @@ const Producto: FC<tpProducto & {getProducto: ()=>void, categoryList:[] , provee
 
     const deleteProducto = (target: number)=>{
         const bag  = new FormData()
-        bag.set('token' , getToken())
+        bag.set('token' , String(getToken()))
         bag.set('target', String(target))
 
         fetch('http://localhost:8081/api/producto/delete', {
@@ -99,7 +94,9 @@ const Producto: FC<tpProducto & {getProducto: ()=>void, categoryList:[] , provee
                     </div>
                 </div>
                 <div className='ctDeleteAndTools'>
-                    <div className='ctDelete' onClick={()=>{deleteProducto(uid)}}>
+                    <div className='ctDelete' onClick={()=>{
+                        P2PSystem(`Desea eliminar el producto ${nombre}` , ()=>{deleteProducto(uid)})
+                    }}>
                         <DeleteIcon  />
                     </div>
                     <div className='lineDivider'> </div>
