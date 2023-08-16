@@ -17,7 +17,14 @@ const Delete = async (req = request, res =response) => {
         res.status(200).json({status: 200, msg: 'Proveedor eliminado con éxito'})
 
     }catch(err){
-        res.status(200).json({status: 500, msg: 'No podemos eliminar Proveedores en este momento'})
+        let say  = {status: 500 , msg: 'No podemos eliminar proveedores en este momento', err}
+
+        if(err['name']=='SequelizeForeignKeyConstraintError'){
+            say.status = 400 , 
+            say.msg    = 'Este proveedor está en uso' 
+        }
+
+        res.status(200).json({...say})
     }
 
 }
