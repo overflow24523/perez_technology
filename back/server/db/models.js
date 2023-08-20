@@ -47,13 +47,13 @@ const Proveedor  = db.define('proveedor' , {
     }
 })
 
-const Categoria   = db.define('categorias' , {
+const Categoria  = db.define('categorias' , {
     label:{
         type: DataTypes.STRING
     }
 })
 
-const Producto = db.define('producto', {
+const Producto   = db.define('producto', {
     nombre:{
         type: DataTypes.STRING
     },
@@ -77,6 +77,10 @@ const Producto = db.define('producto', {
     }
 })
 
+const Servicio   = db.define('servicio' , {
+    nombre: DataTypes.STRING
+})
+
 
 
 Usuario.belongsTo(Rol , {foreignKey: 'id_rol'})
@@ -90,5 +94,6 @@ module.exports = {
     Rol,
     Proveedor, 
     Categoria,
-    Producto
+    Producto,
+    Servicio
 }
