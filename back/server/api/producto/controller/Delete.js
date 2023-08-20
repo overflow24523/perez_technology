@@ -5,7 +5,7 @@ const Delete = async (req = request, res =response) => {
     const {payload} = req
     const {target}  = req.body
 
-    if(payload.rol != 2 || false) res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
+    if(payload.rol != 2 || false) return  res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
 
     try{
         const tempProducto =  await Producto.findByPk(target)

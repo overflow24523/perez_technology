@@ -5,7 +5,7 @@ const Create = async (req = request , res = response)  => {
     const {payload } = req
     const {body} = req
 
-    if(payload.rol !=2 || false) return res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
+    if(payload.rol !=2 &&  payload.rol != 3 &&   true ) return res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
     try{
         const tempCategoria  = await Categoria.findByPk(body.id_categoria)
 

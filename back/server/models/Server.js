@@ -63,6 +63,7 @@ class Server {
         this.app.use('/api/proveedor', require('../api/proveedor/router/proveedor'))
         this.app.use('/api/categoria', require('../api/categoria/router/categoria'))
         this.app.use('/api/producto', require('../api/producto/router/producto'))
+        this.app.use('/api/servicio', require('../api/servicio/router/servicio'))
         
     }
 
