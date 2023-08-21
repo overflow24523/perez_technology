@@ -81,6 +81,25 @@ const Servicio   = db.define('servicio' , {
     nombre: DataTypes.STRING
 })
 
+const Atencion   = db.define('atencione' , {
+    id_own:{
+        type: DataTypes.NUMBER
+    }, 
+    id_service:{
+        type: DataTypes.NUMBER
+    },
+    product_list:{
+        type: DataTypes.STRING
+    },
+    importe:{
+        type: DataTypes.NUMBER
+    }, 
+    detalles:{
+        type: DataTypes.STRING
+    }
+
+}) 
+
 
 
 Usuario.belongsTo(Rol , {foreignKey: 'id_rol'})
@@ -95,5 +114,6 @@ module.exports = {
     Proveedor, 
     Categoria,
     Producto,
-    Servicio
+    Servicio,
+    Atencion
 }
