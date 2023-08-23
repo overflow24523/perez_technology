@@ -107,6 +107,9 @@ Usuario.belongsTo(Rol , {foreignKey: 'id_rol'})
 Producto.belongsTo(Categoria , {foreignKey: 'id_categoria'})
 Producto.belongsTo(Proveedor , {foreignKey: 'id_proveedor'})
 
+Atencion.belongsTo(Usuario , {foreignKey: 'id_own'})
+Atencion.belongsTo(Servicio , {foreignKey: 'id_service'})
+
 module.exports = {
     Contacto,
     Usuario,
