@@ -38,6 +38,7 @@ const Categorias = ()=>{
     useEffect(()=>{
         getCategorias()
     }, [])
+    
     return <div className="Categorias">
         <div className="ctOptions">
             <div className='ctNumber'>

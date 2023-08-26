@@ -14,7 +14,7 @@ const CategoriaScreenEditar: FC<{onClose: ()=>void, uid:number, getCategorias: (
         }
         
         const bag = new FormData()
-        bag.set('token', getToken())
+        bag.set('token', String(getToken()))
         bag.set('target', String(uid))
         bag.set('label', ipEditar)
 

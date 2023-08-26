@@ -1,0 +1,60 @@
+.ServicioScreenOneInput{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+}
+
+
+
+
+.ServicioScreenOneInput .formServicio{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ServicioScreenOneInput .formServicio .frow{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+}
+
+
+.ServicioScreenOneInput .formServicio .frow .fcolumn {
+    display: flex;
+    flex: 1; 
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ServicioScreenOneInput .formServicio .frow .fcolumn input{
+    display: flex;
+    width: 100%;
+}
+
+.ServicioScreenOneInput .formServicio .frow .fcolumn.ctBtEditar{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+.ServicioScreenOneInput .formServicio .frow .fcolumn.ctBtEditar .btEditar{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    cursor: pointer ; 
+}
+
+
+.ServicioScreenOneInput .formServicio .frow .fcolumn.ctBtEditar .btEditar:hover{
+    box-shadow: black 1px 1px 3px;
+}
+
+.ServicioScreenOneInput .formServicio .frow .fcolumn.ctBtEditar .btEditar:active{
+    box-shadow: black 1px 1px 3px inset;
+}

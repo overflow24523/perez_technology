@@ -15,7 +15,7 @@ const Delete = async (req = request, res  =response)=> {
         return res.status(200).json({status: 200, msg: 'Servicio eliminado'})
 
     }catch(err){
-        return res.status(200).json({status: 500, msg: 'No podemos eliminar Servicios en este momento'})
+        return res.status(200).json({status: 500, msg: 'No podemos eliminar Servicios en este momento', err})
     }
 }
 

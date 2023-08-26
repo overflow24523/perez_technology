@@ -84,8 +84,10 @@ type tpProveedor = {
     nombre: string 
 }
 
-
-
+type tpServicio = {
+    id: number, 
+    label: string
+}
 
 type tpProducto ={
     uid: number
@@ -120,4 +122,21 @@ type tpProductAddScreen = {
 
 
 
-export type { actionable, MenuElement, Botton, tIconoDescriptivo, tIconDescriptionTitle, tBtnSphone, dtmResponse, tpUsuario, DialogProps, tpMensaje, tpProducto,tpProductModal , tpWindowBorderTop, tpProductAddScreen, tpProveedor , tpCategoria, GlobalContextType}
+export type { actionable,
+              MenuElement,
+              Botton,
+              tIconoDescriptivo,
+              tIconDescriptionTitle,
+              tBtnSphone,
+              dtmResponse,
+              tpUsuario,
+              DialogProps,
+              tpMensaje,
+              tpProducto,
+              tpProductModal,
+              tpWindowBorderTop,
+              tpProductAddScreen,
+              tpProveedor,
+              tpCategoria,
+              GlobalContextType,
+              tpServicio}
