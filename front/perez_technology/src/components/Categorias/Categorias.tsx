@@ -3,7 +3,7 @@ import Categoria from '../Categoria/Categoria';
 import { useEffect, useState } from 'react';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
-import { Ri24HoursLine, RiAddLine } from 'react-icons/ri';
+    import { Ri24HoursLine, RiAddLine } from 'react-icons/ri';
 import BoxDialog from '../BoxDialog/BoxDialog';
 import CategoriaScreenEditar from '../modals/Categoria/CategoriaScreenEditar/CategoriaScreenEditar';
 const Categorias = ()=>{
@@ -14,7 +14,7 @@ const Categorias = ()=>{
 
     const getCategorias = () => {
         const bag = new FormData()        
-        bag.set('token', getToken())
+        bag.set('token', String(getToken()))
 
         fetch('http://localhost:8081/api/categoria/read', {
             method: 'POST',

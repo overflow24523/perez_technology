@@ -12,7 +12,7 @@ import Almacen_page from './pages/Almacen_page';
 const App = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [upOrDown , setUpOrDown] = useState(true)
-  const [mPoint, setMpoint] = useState(0)
+  const [mPoint, setMpoint] = useState(2)
 
   const handleScroll = (event: any) => {
 

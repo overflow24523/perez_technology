@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const Menu: React.FC<{open: boolean , closeHandler:  (arg: boolean) => void , jostick: (arg: number) => void} > = ({open , closeHandler, jostick})=>{
 
-    const [itemActive, setItemActive] = useState([0,1,0,0,0])
+    const [itemActive, setItemActive] = useState([0,1,0,0,0, 0, 0, 0, 0, 0, 0])
 
     const action = (arg: number , target: string)=>{
         
@@ -39,6 +39,7 @@ const Menu: React.FC<{open: boolean , closeHandler:  (arg: boolean) => void , jo
             <MenuItem texto = {"Categorías"}     target="4"     accion={action}    pointer={3}  clase={`${itemActive[3]?'active':''} ` } dtmAnimationType='T3'/>
             <MenuItem texto = {"Proveedores"}    target="5"     accion={action}    pointer={4}  clase={`${itemActive[4]?'active':''} ` } dtmAnimationType='T2'/>
             <MenuItem texto = {"Productos"}      target="6"     accion={action}    pointer={5}  clase={`${itemActive[5]?'active':''} ` } dtmAnimationType='T1'/>
+            <MenuItem texto = {"Servicios"}      target="7"     accion={action}    pointer={6}  clase={`${itemActive[6]?'active':''} ` } dtmAnimationType='T1'/>
             
     </div>)
     

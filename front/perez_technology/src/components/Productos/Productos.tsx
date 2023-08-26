@@ -16,7 +16,7 @@ const Productos = ()=>{
 
     const getProductos = ()=>{
         const bag = new FormData()
-        bag.set('token', getToken())
+        bag.set('token', String(getToken()))
         
         fetch('http://localhost:8081/api/producto/read', {
             method: 'POST',
@@ -39,7 +39,7 @@ const Productos = ()=>{
 
     const getCategorias =()=>{
         const bag = new FormData()
-        bag.set( 'token',getToken())
+        bag.set( 'token', String(getToken()))
         fetch('http://localhost:8081/api/categoria/read',{
             method: 'POST',
             body: bag
@@ -59,7 +59,7 @@ const Productos = ()=>{
 
     const getProveedores = () =>{
         const bag  = new FormData()
-        bag.set('token' , getToken())
+        bag.set('token' , String(getToken()))
         fetch('http://localhost:8081/api/proveedor/read', {
             method: 'POST',
             body: bag

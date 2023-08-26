@@ -1,0 +1,70 @@
+.Servicio{
+    display: grid;
+    margin: 15px;
+    grid-template-columns: 1fr 96px;
+    flex: 1;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    border: 3px solid gray;
+}
+
+
+.Servicio .ctName{
+    border-right: 3px solid gray;
+}
+
+.Servicio .ctOptions{
+    display: flex ; 
+    flex-direction: column;
+    padding: 1px;
+}
+
+.Servicio .ctOptions .lineDivider{
+    width: 100% ;
+    height: 1px;
+    background-color: gray ;
+}
+
+
+
+.Servicio .ctOptions .ctDelete{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(185, 61, 61);
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 1px;
+}
+
+.Servicio .ctOptions .ctDelete:hover{
+    border: 1px solid gray;
+}
+
+.Servicio .ctOptions .ctDelete:active{
+    box-shadow: gray 1px 1px 5px  inset;       
+}   
+
+.Servicio .ctOptions .ctTools{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(104, 105, 106);
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 1px ;
+}
+
+
+.Servicio .ctOptions .ctTools:hover{
+    border: 1px solid gray;
+}
+
+.Servicio .ctOptions .ctTools:active{
+    box-shadow: gray 1px 1px 5px  inset;       
+}
