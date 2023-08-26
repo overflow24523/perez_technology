@@ -1,12 +1,14 @@
-.Servicios{
+.Atenciones{
     padding: 20px;
+    width: 100%;
     display: flex;
-    flex: 1;
     flex-direction: column;
+    
 }
 
 
-.Servicios > .ctOptions{
+
+.Atenciones .ctEstadisticas{
     background-color: rgb(117, 117, 227);
     border-radius: 7px;
     box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
@@ -18,7 +20,7 @@
 }
 
 
-.Servicios > .ctOptions > div{
+.Atenciones .ctEstadisticas > div{
     width: 25%;
     /* border: 1px solid black ; */
     display: flex;
@@ -27,7 +29,8 @@
     font-size: 25px;
 }
 
-.Servicios > .ctOptions .ctNumber{
+
+.Atenciones .ctEstadisticas .ctNumber{
     border-radius: 5px;
     background-color: rgb(21, 163, 116);
     width: 200px;
@@ -37,9 +40,7 @@
     cursor: pointer;
 }
 
-
-
-.Servicios .ctOptions .ctAgregar{
+.Atenciones .ctEstadisticas .ctAddAtenciones{
     border-radius: 5px;
     background-color: rgb(192, 143, 52);
     min-width: 200px;
@@ -49,9 +50,7 @@
     cursor: pointer;
 }
 
-
-
-.Servicios .ctOptions  .ctUpdate{
+.Atenciones .ctEstadisticas .ctUpdate{
     border-radius: 5px;
     background-color: rgb(21, 149, 163);
     width: 200px;
@@ -60,23 +59,23 @@
     box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
     cursor: pointer;
 }
-
-
-.Servicios .ctOptions  .ctUpdate .ctLabel{
+ 
+.Atenciones .ctEstadisticas .ctUpdate .ctLabel{
     margin-left: 10px;
 }
 
-
-.Servicios .ctOptions .ctAgregar:hover, .Servicios .ctOptions  .ctUpdate:hover{
-    box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
-}
-
-.Servicios .ctOptions .ctAgregar:active, .Servicios .ctOptions  .ctUpdate:active{
-    box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288) inset;
+.Atenciones .ctEstadisticas .ctAddAtenciones:hover , .Atenciones .ctEstadisticas .ctUpdate:hover{
+      box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
 
-.Servicios .ctServicios{
+.Atenciones .ctEstadisticas .ctAddAtenciones:active , .Atenciones .ctEstadisticas .ctUpdate:active{
+      box-shadow: -3px -3px 17px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288) inset;
+}
+
+.Atenciones .ctAtenciones{
+    display: flex;
+    flex-direction: column;
     background: -moz-linear-gradient(rgb(117, 117, 227), rgb(28, 28, 73));
     background: -webkit-linear-gradient(rgb(117, 117, 227), rgb(28, 28, 73));
     background: -o-linear-gradient(rgb(117, 117, 227), rgb(28, 28, 73)) ;
@@ -84,6 +83,4 @@
     box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
     height: 100% ;
     overflow-y: scroll;
-    display: grid;
-    grid-template-columns: repeat(1 , 1fr);
-}
+}   
