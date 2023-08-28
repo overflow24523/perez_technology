@@ -3,6 +3,7 @@ import './Atenciones.css'
 import { useEffect, useState } from 'react'
 import { getToken } from '../../helpers/HandlerToken'
 import { mostrarAlerta } from '../../helpers/MostrarAlerta'
+import Atencion from '../Atencion/Atencion';
 
 const Atenciones = () => {
 
@@ -52,10 +53,9 @@ const Atenciones = () => {
                         </div>
                     </div>
                 </div>
-
-                    <div className='ctAtenciones'>
-                    
-                    </div> 
+                <div className='ctAtenciones'>
+                    <Atencion />
+                </div> 
             </div> 
 
 }

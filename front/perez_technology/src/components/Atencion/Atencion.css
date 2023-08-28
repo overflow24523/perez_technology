@@ -1,0 +1,100 @@
+.Atencion{
+    font-size: 25px;
+    font-weight: 700;
+    border: 3px solid gray;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 192px 3fr 3fr  1fr 96px     ;
+    grid-template-rows: 1fr;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #4d494973, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.Atencion > .ctDate {
+    border-right: 3px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Atencion > .ctDate  .lineDivider{
+    border: 1px solid black;
+    width: 100% ;
+}
+
+
+.Atencion .ctNombre{
+    border-right: 3px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Atencion .ctProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid gray    ;
+}
+
+.Atencion .ctPrecio {
+    display: flex;
+    justify-content: center;
+    border-right: 3px solid gray;
+    align-items: center;
+}
+
+.Atencion .ctProductos .ctCant{
+    border-right: 3px solid gray;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100% ;
+}
+
+.Atencion .ctDeleteAndTools{
+    display: flex;
+    flex-direction: column;
+    padding: 1px ;
+}
+
+
+.Atencion .ctDeleteAndTools .lineDivider{
+    width: 100% ;
+    height: 1px;
+    background-color: gray ;
+}
+
+
+.Atencion .ctDeleteAndTools .ctDelete , .Atencion .ctDeleteAndTools .ctTools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    flex: 1;
+    cursor: pointer;
+    margin: 1px;
+    border: 1px solid transparent;
+}
+
+.Atencion .ctDeleteAndTools .ctDelete:hover , .Atencion .ctDeleteAndTools .ctTools:hover{
+    border: 1px solid gray;
+} 
+
+.Atencion .ctDeleteAndTools .ctDelete:active , .Atencion .ctDeleteAndTools .ctTools:active{
+    box-shadow: gray 1px 1px 5px  inset;     
+} 
+
+.Atencion .ctDeleteAndTools .ctDelete{
+    color: rgb(174, 82, 82);
+}  
+
+.Atencion .ctDeleteAndTools .ctTools{
+    color: gray ; 
+}
