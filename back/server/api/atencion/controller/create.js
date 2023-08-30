@@ -1,11 +1,11 @@
 const { request, response } = require("express");
-const { Usuario, Servicio, Atencion } = require("../../../db/models");
+const {Usuario ,Servicio, Atencion, Producto } = require("../../../db/models");
 
 const checkProductList = (arg)=>{
     return new Promise(async (resolve = (state) => state , reject = (err) => err )=>{
         for(let i=0;i<arg.length ;i++){
             const item  = Number(arg[i])
-            const tempUser = await Usuario.findByPk(item)
+            const tempUser = await Producto.findByPk(item)
             if(!tempUser) resolve(false)
         }
         resolve(true)

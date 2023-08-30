@@ -1,4 +1,5 @@
 
+
 type GlobalContextType = {
     login: boolean,
     setLogin: (arg: boolean)=>void
@@ -100,7 +101,15 @@ type tpProducto ={
     proveedor: string 
 }
 
-
+type tpAtencion ={
+    id: number, 
+    nombre: string , 
+    precio: number , 
+    createdAt: string,
+    owner: string,
+    product_list: [],
+    update: ()=>void
+}
 
 type tpProductModal = {
     handlerClick: (arg: number)=>void,
@@ -139,4 +148,6 @@ export type { actionable,
               tpProveedor,
               tpCategoria,
               GlobalContextType,
-              tpServicio}
+              tpServicio,
+              tpAtencion
+            }

@@ -32,10 +32,7 @@ const Atenciones = () => {
 
     useEffect( ()=>{
         getAtenciones()
-    } , [])
-
-    
-
+    }, [])
 
     return <div className="Atenciones">
                 <div className='ctEstadisticas'>
@@ -54,7 +51,22 @@ const Atenciones = () => {
                     </div>
                 </div>
                 <div className='ctAtenciones'>
-                    <Atencion />
+                    {
+                        atencionList.map(item =>{ 
+                            const { id , user ,createdAt ,servicio ,importe:precio, product_list} = item 
+                            const {nombre} = servicio
+                            const {nombre:UserNombre} = user
+                            console.log(item)
+                            return <Atencion 
+                                        owner= {UserNombre}
+                                        nombre={nombre}
+                                        precio={precio}
+                                        id={id}
+                                        createdAt={createdAt}
+                                        product_list={JSON.parse(product_list)}
+                                        update={getAtenciones}/>
+                        })
+                    }
                 </div> 
             </div> 
 
