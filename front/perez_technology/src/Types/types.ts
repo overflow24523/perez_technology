@@ -110,11 +110,15 @@ type tpAtencion ={
     product_list: [],
     update: ()=>void
 }
+type tpAtencionAddModal = {
+    onClose: ()=>void
+}
 
 type tpProductModal = {
     handlerClick: (arg: number)=>void,
     onClose: () => void
 }
+
 
 type tpWindowBorderTop = {
     onClose: ()=>void
@@ -149,5 +153,6 @@ export type { actionable,
               tpCategoria,
               GlobalContextType,
               tpServicio,
-              tpAtencion
+              tpAtencion,
+              tpAtencionAddModal
             }

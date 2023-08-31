@@ -28,7 +28,7 @@ const ProductAddScreen:FC<tpProductAddScreen> = ({categoryList ,proveedorList, o
         e.preventDefault()
         e.stopPropagation()
         const bag = new FormData()
-        bag.set('token', getToken())
+        bag.set('token', String(getToken()))
 
         const claves = Object.keys(formData)
         await claves.forEach(item =>{

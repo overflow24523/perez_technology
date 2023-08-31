@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
-  }
+}
+
+#sv-nav-complete{
+    display: none;    
+}
+  
 
 html,
 body {

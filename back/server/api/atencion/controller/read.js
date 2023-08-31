@@ -8,7 +8,7 @@ const Read  = async  (req = request, res = response)=>{
 
     try{
         let atenciones  = await Atencion.findAll({include: [{all: true}]})
-        return res.status(200).json({status: 200, msg: 'Atenciones tenidas con éxito', bag: atenciones})
+        return res.status(200).json({status: 200, msg: 'Atenciones obtenidas con éxito', bag: atenciones})
 
     }catch(err){
         return res.status(200).json({status: 500, msg: 'No podemos obtener atenciones en este momento'})

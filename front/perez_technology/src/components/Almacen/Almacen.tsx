@@ -4,7 +4,7 @@ import AlmacenLayout from '../AlmacenLayout/AlmacenLayout';
 import { FC, useState } from 'react';
 const Almacen: FC<{ mPointH: (arg: number) => void, upOrDown: boolean}> = ({mPointH , upOrDown})=>{
 
-    const [layout , setLayout] = useState<number>(2)
+    const [layout , setLayout] = useState<number>(3)
     const handlerLayout = (arg: number)=>{
         if(arg==1){
             mPointH(0)

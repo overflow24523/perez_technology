@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { getToken } from '../../helpers/HandlerToken'
 import { mostrarAlerta } from '../../helpers/MostrarAlerta'
 import Atencion from '../Atencion/Atencion';
+import BoxDialog from '../BoxDialog/BoxDialog';
+import ModalAtencionAgregar from '../modals/Atencion/ModalAtencionAgregar/ModalAtencionAgregar'
 
 const Atenciones = () => {
 
@@ -30,6 +32,8 @@ const Atenciones = () => {
         })
     }
 
+    const [rolebox, setRolebox]  = useState(false)
+
     useEffect( ()=>{
         getAtenciones()
     }, [])
@@ -39,14 +43,14 @@ const Atenciones = () => {
                     <div className='ctNumber'>
                         {atencionList.length}
                     </div>
-                    <div className='ctAddAtenciones'>
+                    <div className='ctAddAtenciones' onClick={()=>setRolebox(true)}>
                         <div>Agregar Atención</div> 
                         <RiAddLine/>
                     </div>
-                    <div className='ctUpdate'>
+                    <div className='ctUpdate' onClick={getAtenciones}>
                         <Ri24HoursLine />
                         <div className='ctLabel'>
-                            Actializar
+                            Actualizar
                         </div>
                     </div>
                 </div>
@@ -68,6 +72,7 @@ const Atenciones = () => {
                         })
                     }
                 </div> 
+                <BoxDialog isOpen={rolebox} children={ <ModalAtencionAgregar onClose={()=>setRolebox(false)} /> } onClose={()=>setRolebox(false)} />
             </div> 
 
 }
