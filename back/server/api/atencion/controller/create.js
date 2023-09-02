@@ -14,12 +14,17 @@ const checkProductList = (arg)=>{
 
 
 const Create = async  (req = request , res = response)=>{
-    const {id_own, id_service, product_list , importe , detalles} = req.body
+    const {id_service, product_list:ListProduct , importe , detalles} = req.body
     const {payload} = req
+    const {uid:id_own} = payload
 
-    if(payload.rol != 2 && true ) return res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
+    if(payload.rol != 2 && payload.rol!= 3 && true ) return res.status(200).json({status: 401, msg: 'Usted no dispone de un privilegio requerido'})
+
 
     try{
+        product_list = ListProduct.split(',')
+
+
         const tempUser = await Usuario.findByPk(id_own)
         if(!tempUser) return res.status(200).json({status: 400, msg: 'Debe proporcionar un usuario válido '})
 
@@ -28,7 +33,7 @@ const Create = async  (req = request , res = response)=>{
 
         let product_list_state = false 
 
-        await checkProductList(JSON.parse(product_list))
+        await checkProductList(product_list)
         .then(arg => { product_list_state = arg  })
         .catch(err=>{
             product_list_state = false 

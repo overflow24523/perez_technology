@@ -3,7 +3,12 @@ html {
 }
 
 #sv-nav-complete{
-    display: none;    
+    /* display: none;     */
+}
+
+.sd-action-bar.sd-footer{
+    display: flex;
+    flex-direction: row-reverse;
 }
   
 
@@ -24,6 +29,11 @@ body {
     min-height: 100vh !important;
     max-height: 100vh !important;
     overflow-y: auto;
+}
+
+.ctScroller{
+    overflow: scroll;
+    background-color: #f3f3f3;
 }
 
 

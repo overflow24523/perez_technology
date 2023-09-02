@@ -10,7 +10,6 @@ const app = Router()
 
 
 app.post('/create', [security_post,
-    check('id_own', 'El dueño del  registro es obligatorio').isNumeric(),
     check('id_service', 'El servicio realizado es obligatorio').isNumeric(),
     check('importe', 'El importe es obligatorio').isNumeric(), 
     validarCampos], Create)

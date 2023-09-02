@@ -2,5 +2,10 @@
     width: max-content;
     min-width: 700px;
     height: auto;
-    
+    max-height: 700px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+

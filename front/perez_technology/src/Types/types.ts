@@ -111,7 +111,8 @@ type tpAtencion ={
     update: ()=>void
 }
 type tpAtencionAddModal = {
-    onClose: ()=>void
+    onClose: ()=>void,
+    update: ()=>void
 }
 
 type tpProductModal = {

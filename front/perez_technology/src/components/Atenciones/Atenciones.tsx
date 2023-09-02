@@ -72,7 +72,7 @@ const Atenciones = () => {
                         })
                     }
                 </div> 
-                <BoxDialog isOpen={rolebox} children={ <ModalAtencionAgregar onClose={()=>setRolebox(false)} /> } onClose={()=>setRolebox(false)} />
+                <BoxDialog isOpen={rolebox} children={ <ModalAtencionAgregar onClose={()=>setRolebox(false)} update={getAtenciones} /> } onClose={()=>setRolebox(false)} />
             </div> 
 
 }
