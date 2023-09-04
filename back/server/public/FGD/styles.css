@@ -1,0 +1,94 @@
+/* Estilos generales */
+.tablonDeNoticias {
+    border: 1px solid #1e88e5; /* Azul claro similar a cian */
+    background-color: #121212; /* Negro tecnológico */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border: 1px solid #1e88e5; /* Azul claro similar a cian */
+    width: min-content;
+    padding: 10px;
+    background-color: #121212; /* Negro tecnológico */
+    border-radius: 5px;
+}
+
+.main-carousel {
+    width: 400px; /* Ancho del carrusel principal */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #1e88e5; /* Azul claro similar a cian */
+    border-radius: 5px;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+#main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail-y-controllers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-y-controllers a {
+    font-size: 35px;
+    margin: 5px;
+    color: #1e88e5; /* Azul claro similar a cian */
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.thumbnail-y-controllers a:hover {
+    color: #0077b6; /* Otro tono de azul */
+}
+
+.thumbnail-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las miniaturas */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    padding: 10px 0; /* Espacio superior e inferior */
+    flex: 1;
+}
+
+/* Añade una transición suave para las miniaturas */
+.carousel-slide-thumbnail {
+    width: 80px; /* Ancho de las miniaturas */
+    height: 60px; /* Altura de las miniaturas */
+    background-color: #0077b6; /* Azul claro similar a cian */
+    cursor: pointer;
+    flex-shrink: 0; /* Evitar que las miniaturas se ajusten */
+    border: 2px solid #1e88e5; /* Borde similar al color de acento */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Aplica estilos cuando se pasa el mouse por encima */
+.carousel-slide-thumbnail:hover {
+    border-color: #0052cc; /* Cambio de color al pasar el mouse */
+    transform: scale(1.1); /* Escala ligeramente al pasar el mouse */
+}
+
+/* Estilos para resaltar la miniatura seleccionada */
+.carousel-slide-thumbnail.active {
+    border-color: #ff6b6b; /* Borde rojo para la miniatura activa */
+    transform: scale(1.1); /* Escala ligeramente la miniatura activa */
+}
+

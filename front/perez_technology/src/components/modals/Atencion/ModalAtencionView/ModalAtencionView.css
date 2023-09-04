@@ -1,0 +1,66 @@
+.ModalAtencionView{
+    width: max-content;
+    min-width: 700px;
+    height: auto;
+    max-height: 700px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ModalAtencionView .viewRow {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ModalAtencionView .viewRow:nth-child(2n){
+    background-color: aqua;
+}
+
+.ModalAtencionView .viewRow > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.ModalAtencionView .viewRow > div:nth-child(1){
+    border-right: 1px solid black;
+}
+
+.ModalAtencionView .viewRow > div:nth-child(2){
+    padding-left: 10px;
+    justify-content: center;
+}
+
+
+.ModalAtencionView .viewRow .ctNumberOfProduct{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ModalAtencionView .viewRow .ctNumberOfProduct .productViewer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    width: 100% ;
+    
+}
+
+.ModalAtencionView .viewRow .ctNumberOfProduct .productViewer:not(:last-child){
+    border-bottom: 1px dashed black;    
+}
+
+
+
+
+
+
+
+
+
+

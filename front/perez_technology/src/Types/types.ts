@@ -1,5 +1,4 @@
 
-
 type GlobalContextType = {
     login: boolean,
     setLogin: (arg: boolean)=>void
@@ -108,8 +107,10 @@ type tpAtencion ={
     createdAt: string,
     owner: string,
     product_list: [],
-    update: ()=>void
+    update: ()=>void,
+    descripcion: string,    
 }
+
 type tpAtencionAddModal = {
     onClose: ()=>void,
     update: ()=>void
@@ -118,6 +119,17 @@ type tpAtencionAddModal = {
 type tpProductModal = {
     handlerClick: (arg: number)=>void,
     onClose: () => void
+}
+
+type tpModalAtencionView = {
+    onClose: ()=>void,
+    date: string, 
+    servicio: string , 
+    almacenero:string , 
+    importe: number, 
+    descripcion: string,
+    product_list: number[]
+
 }
 
 
@@ -155,5 +167,6 @@ export type { actionable,
               GlobalContextType,
               tpServicio,
               tpAtencion,
-              tpAtencionAddModal
+              tpAtencionAddModal,
+              tpModalAtencionView
             }

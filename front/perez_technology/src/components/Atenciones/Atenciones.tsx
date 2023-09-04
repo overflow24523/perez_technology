@@ -57,10 +57,9 @@ const Atenciones = () => {
                 <div className='ctAtenciones'>
                     {
                         atencionList.map(item =>{ 
-                            const { id , user ,createdAt ,servicio ,importe:precio, product_list} = item 
+                            const { id , user ,createdAt,detalles:descripcion  ,servicio ,importe:precio, product_list} = item 
                             const {nombre} = servicio
                             const {nombre:UserNombre} = user
-                            console.log(item)
                             return <Atencion 
                                         owner= {UserNombre}
                                         nombre={nombre}
@@ -68,7 +67,10 @@ const Atenciones = () => {
                                         id={id}
                                         createdAt={createdAt}
                                         product_list={JSON.parse(product_list)}
-                                        update={getAtenciones}/>
+                                        update={getAtenciones}
+                                        descripcion={descripcion}
+                                        key={id}
+                                        />
                         })
                     }
                 </div> 

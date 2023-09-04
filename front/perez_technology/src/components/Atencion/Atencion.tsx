@@ -1,12 +1,16 @@
 import { RiDeleteBin5Fill as DeleteIcon , RiEyeFill as ViewEye} from 'react-icons/ri';
 import './Atencion.css'
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { tpAtencion } from '../../Types/types';
 import { getToken } from '../../helpers/HandlerToken';
 import { mostrarAlerta } from '../../helpers/MostrarAlerta';
 import { P2PSystem } from '../../helpers/P2PSystem';
+import BoxDialog from '../BoxDialog/BoxDialog';
+import ModalAtencionView from '../modals/Atencion/ModalAtencionView/ModalAtencionView';
 
-const Atencion:FC<tpAtencion> =({id , nombre,precio, createdAt , product_list, update}) =>{
+const Atencion:FC<tpAtencion> =({id, nombre, precio,descripcion , createdAt , product_list, update, owner}) =>{
+
+    const [rolebox , setRoleBox] = useState(false)
     
     const DeleteAtencion =()=>{
         const bag = new FormData()
@@ -59,10 +63,26 @@ const Atencion:FC<tpAtencion> =({id , nombre,precio, createdAt , product_list, u
                 <DeleteIcon  />
             </div>
             <div className='lineDivider'> </div>
-            <div className='ctTools' >
+            <div className='ctTools' onClick={()=>setRoleBox(true)}>
                 <ViewEye />
             </div>
         </div>
+
+        <BoxDialog isOpen={rolebox}
+        onClose={()=>setRoleBox(false)}
+        children={<ModalAtencionView 
+                        onClose={()=>setRoleBox(false)}
+                        date={createdAt.split('T')[0]}
+                        almacenero={owner}
+                        descripcion={descripcion}
+                        importe={precio}
+                        product_list={product_list}
+                        servicio={nombre}
+                        
+                        />} 
+        />
+
+
 
     </div>
 }

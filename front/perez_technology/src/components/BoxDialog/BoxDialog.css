@@ -15,14 +15,14 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
-    padding: 2px;
+    /* padding: 2px; */
     max-width: 80%;
     max-height: 80%;
     overflow: visible;
   }
   
   .dialog-content {
-    margin: 2px;
+    /* margin: 2px; */
     max-height: 700px;
   }
   
