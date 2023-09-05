@@ -1,3 +1,4 @@
+import Atenciones from '../Atenciones/Atenciones'
 import Categorias from '../Categorias/Categorias'
 import Mensajes from '../Mensajes/Mensajes'
 import Productos from '../Productos/Productos'
@@ -27,6 +28,9 @@ const AdminLayout: FC<{ layout: number }> = ({ layout }) => {
             break;
         case 7: 
             children = <Servicios />
+            break ; 
+        case 8: 
+            children = <Atenciones />
             break ; 
         default:
             children = <div> Welcome </div>

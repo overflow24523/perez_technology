@@ -40,6 +40,7 @@ const Menu: React.FC<{open: boolean , closeHandler:  (arg: boolean) => void , jo
             <MenuItem texto = {"Proveedores"}    target="5"     accion={action}    pointer={4}  clase={`${itemActive[4]?'active':''} ` } dtmAnimationType='T2'/>
             <MenuItem texto = {"Productos"}      target="6"     accion={action}    pointer={5}  clase={`${itemActive[5]?'active':''} ` } dtmAnimationType='T1'/>
             <MenuItem texto = {"Servicios"}      target="7"     accion={action}    pointer={6}  clase={`${itemActive[6]?'active':''} ` } dtmAnimationType='T1'/>
+            <MenuItem texto = {"Atenciones"}     target="8"     accion={action}    pointer={7}  clase={`${itemActive[7]?'active':''} ` } dtmAnimationType='T1'/>
             
     </div>)
     
