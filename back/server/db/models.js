@@ -5,7 +5,7 @@ const Usuario  = db.define('user', {
     nombre: {
         type: DataTypes.STRING
     }, 
-    password:{
+    password:{ 
         type: DataTypes.STRING
     },
     id_rol: {

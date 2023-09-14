@@ -18,4 +18,6 @@ const WindowBorderTop: FC<tpWindowBorderTop> = ({onBack, onClose,title})=>{
 }
 
 
+
+
 export default WindowBorderTop

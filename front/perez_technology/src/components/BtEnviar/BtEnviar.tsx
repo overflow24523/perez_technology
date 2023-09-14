@@ -1,6 +1,6 @@
 import './BtEnviar.css'
 import {FC} from 'react'
-const BtEnviar:FC<{text: string}>  = ({text}) => {
+const BtEnviar: FC<{text: string}>  = ({text}) => {
     return <div className="BtEnviar">
         <button>
             <div className="svg-wrapper-1">

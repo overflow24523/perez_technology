@@ -4,7 +4,7 @@ import FooterImportado from '../FooterImportado/FooterImportado';
 const Footer = () => {
     return <div className='Footer'>
         <div id="footer" className="footer">
-            <div className="bubbles">
+            {/* <div className="bubbles">
                 <div className="bubble" style={{"--size":" 3.640251743066038rem","--distance":" 6.760951731068476rem","--position":" 58.258473565453436%","--time":" 2.089713969212422s","--delay":" -3.851696362048387s"}}></div>
                 <div className="bubble" style={{"--size":" 4.211173258695976rem","--distance":" 6.16050692416458rem","--position":" 58.98638108304732%","--time":" 2.3099743658717804s","--delay":" -2.9875332835507233s"}}></div>
                 <div className="bubble" style={{"--size":" 2.499546658618743rem","--distance":" 8.463299267411859rem","--position":" 45.89066683380858%","--time":" 2.7367483875886265s","--delay":" -2.1162739160953774s"}}></div>
@@ -133,7 +133,7 @@ const Footer = () => {
                 <div className="bubble" style={{"--size":" 3.334641524496214rem","--distance":" 8.071014814228349rem","--position":" 69.32429954428984%","--time":" 3.639084333317536s","--delay":" -3.5070285180805008s"}}></div>
                 <div className="bubble" style={{"--size":" 3.7491996266846517rem","--distance":" 7.999856861143533rem","--position":" 90.41901440178962%","--time":" 3.6508045949827475s","--delay":" -3.7401940688768196s"}}></div>
                 <div className="bubble" style={{"--size":" 4.1828653929345165rem","--distance":" 8.940938430276322rem","--position":" 52.19911536337786%","--time":" 2.8653357847548855s","--delay":" -2.6593771707914375s"}}></div>
-            </div>
+            </div> */}
             <FooterImportado />
         </div>
 

@@ -38,12 +38,12 @@ const Proveedor: FC<tpProveedor & {getProveedor: ()=>void}> = ({id, nombre, getP
             {nombre}
         </div>
         <div className="ctOptions">
-            <div className="ctDelete">
-                 <RiDeleteBin5Fill onClick={()=>{P2PSystem(`Desea eliminar el proveedor ${nombre}` , DeleteProveedor)}} />
+            <div className="ctDelete" onClick={()=>{P2PSystem(`Desea eliminar el proveedor ${nombre}` , DeleteProveedor)}}>
+                 <RiDeleteBin5Fill  />
             </div>
             <div className='lineDivider'></div>
-            <div className="ctTools">
-                <RiToolsFill  onClick={()=>{setRoleBox(true)}} />
+            <div className="ctTools" onClick={()=>{setRoleBox(true)}}> 
+                <RiToolsFill   />
             </div>
         </div>
 

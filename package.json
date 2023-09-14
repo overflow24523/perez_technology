@@ -1,1 +1,10 @@
-{}
+{
+  "name": "perez_technology",
+  "description": "Landing Page y sistema de gestión de ecosistema de clínica de celulares",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

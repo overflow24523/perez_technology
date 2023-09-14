@@ -16,7 +16,7 @@ const FooterImportado = () => {
               <img src="./src/assets/favicon/favicon.png" width={64} height={64}  alt="" />
               <span>Perez Technology</span>
             </h2>
-            <p>
+            <p className='textFooter'>
               Perez Technology es una empresa dedicada a la reparación  de dispositivos electrónicos.
               Nuestro lema: "Podemos arreglarlo". Reparamos en tiempo record 
               teléfonos, tablet, aipads, portatiles, ordenadores de escritorio y relojes inteligentes.
@@ -24,30 +24,30 @@ const FooterImportado = () => {
             <p>© 2023, todos  los derechos reservados</p>
           </div>
           <div className="col-md-4 footer-nav animated fadeInUp">
-            <h4 className='text-center '>—  Menu —</h4>
+            <h4 className='text-center '>—  Menú —</h4>
             <div className='d-flex' >
-              <div className="col-md-6">
+              <div className="col-md-6 d-flex justify-content-center">
                 <ul className="pages">
-                  <li>
+                  <li className='LiFoterItem'>
                     <a href="#inicio">Inicio</a>
                   </li>
-                  <li>
+                  <li className='LiFoterItem'>
                     <a href="#nosotros">Nosotros</a>
                   </li>
-                  <li>
+                  <li className='LiFoterItem'>
                     <a href="#talleres">Talleres</a>
                   </li>
-                  <li>
+                  <li className='LiFoterItem'>
                     <a href="#promociones">Promociones</a>
                   </li>
-                  <li>
+                  <li className='LiFoterItem'>
                     <a href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
 
-              <div className="col-md-6">
-                <ul className="list">
+              <div className="col-md-6 d-flex justify-content-center">
+                <ul className="pages">
                   <li>
                     <a href="#">Desarrolladores</a>
                   </li>
@@ -61,14 +61,14 @@ const FooterImportado = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 footer-social animated fadeInDown">
-            <h4>Síguenos en </h4>
-            <ul>
-              <li className='ctIconyLink'>
+          <div className="col-md-2 footer-social animated fadeInDown d-flex  flex-column align-item-center">
+            <h4 className='text-center'>—  Redes  —</h4>
+            <ul className='col-8 mx-auto' >
+              <li className='ctIconyLink liLinkRedes' >
                 <RiFacebookBoxFill />
                 <a href="https://www.facebook.com/profile.php?id=100091656409799&mibextid=ZbWKwL"  target="_blank">Facebook</a>
               </li>
-              <li>
+              <li className='liLinkRedes'>
                 <RiInstagramFill />
                 <a href="https://instagram.com/technologyperez?igshid=ZGUzMzM3NWJiOQ==" target="_blank">Instagram</a>
               </li>
